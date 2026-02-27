@@ -1,11 +1,139 @@
+# ============================================
+# robots.txt — AI Tools Hub (aitoolshub.com)
+# Updated: 2026-02-28
+# ============================================
+
+# ---- Default: Allow all well-behaved bots ----
 User-agent: *
 Allow: /
+Allow: /articles/
+Allow: /sitemap.xml
+Allow: /manifest.json
 
-# Sitemap
-Sitemap: https://aitoolshub.com/sitemap.xml
+# Block any private or utility paths (add as needed)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.vercel/
+Disallow: /*.py$
+Disallow: /build-articles.py
+Disallow: /seo-rebuild.py
+Disallow: /add-images.py
 
-# Crawl-delay
+# Clean-param: Tell crawlers to ignore tracking/session parameters
+# This prevents duplicate content from UTM/session URLs
+Clean-param: utm_source /
+Clean-param: utm_medium /
+Clean-param: utm_campaign /
+Clean-param: utm_term /
+Clean-param: utm_content /
+Clean-param: ref /
+Clean-param: source /
+Clean-param: fbclid /
+Clean-param: gclid /
+Clean-param: msclkid /
+Clean-param: mc_eid /
+Clean-param: yclid /
+Clean-param: _ga /
+
+# Crawl-delay: Be polite to crawlers (seconds between requests)
 Crawl-delay: 1
 
-# Block admin/private if any
-# Disallow: /admin/
+# ---- Google-specific rules ----
+User-agent: Googlebot
+Allow: /
+Allow: /articles/
+Disallow: /admin/
+Disallow: /.vercel/
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /admin/
+
+User-agent: Googlebot-Video
+Disallow: /
+
+User-agent: Google-Extended
+# Allow Google AI training (good for E-E-A-T signals; change to Disallow if preferred)
+Allow: /
+
+# ---- Bing/Microsoft ----
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: msnbot
+Allow: /
+
+# ---- Social media crawlers (allow for OG/Twitter cards) ----
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# ---- SEO tool crawlers (allow for analysis) ----
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 10
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 10
+
+# ---- AI training bots (block aggressive scrapers) ----
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# ---- Known bad bots ----
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Crawl-delay: 30
+
+# ---- Sitemap location ----
+Sitemap: https://aitoolshub.com/sitemap.xml

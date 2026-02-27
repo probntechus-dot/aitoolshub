@@ -1,8 +1,45 @@
 /* ============================================
    AI Tools Hub - Blog Stylesheet
+   Core Web Vitals Optimized — 2026-02-28
    ============================================ */
 
+/* ============================================
+   GOOGLE FONTS — font-display:swap prevents FOIT
+   ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ============================================
+   CRITICAL: Explicit @font-face with font-display:swap
+   (Fallback if Google Fonts preconnect fails)
+   ============================================ */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Serif Regular'), local('PTSerif-Regular');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Serif Bold'), local('PTSerif-Bold');
+}
 
 :root {
   --primary: #2563eb;
@@ -47,7 +84,53 @@ body {
 a { color: var(--primary); text-decoration: none; transition: color var(--transition); }
 a:hover { color: var(--primary-dark); text-decoration: underline; }
 
-img { max-width: 100%; height: auto; display: block; }
+/* CLS fix: explicit dimensions prevent layout shift */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* Reserve space before image loads to prevent CLS */
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Explicit dimensions for logo icon — prevents CLS in header */
+.logo-icon {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px;
+  min-height: 38px;
+}
+
+/* CLS fix: reserve space for avatar images */
+.author-avatar-sm {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px;
+}
+
+.about-widget-photo {
+  width: 75px !important;
+  height: 75px !important;
+  min-width: 75px;
+}
+
+.author-box-photo {
+  width: 90px !important;
+  height: 90px !important;
+  min-width: 90px;
+}
+
+.recent-post-thumb {
+  width: 60px !important;
+  height: 52px !important;
+  min-width: 60px;
+}
+
+/* CLS fix: reserve height for ad zones so they don't shift content */
+.ad-leaderboard { min-height: 90px; contain: layout; }
+.ad-in-article  { min-height: 250px; contain: layout; }
+.ad-sidebar     { min-height: 250px; contain: layout; }
+.ad-widget      { min-height: 250px; contain: layout; }
 
 /* ============================================
    HEADER & NAVIGATION
@@ -1652,4 +1735,316 @@ img { max-width: 100%; height: auto; display: block; }
   .featured-content h2 { font-size: 19px; }
   
   .resources-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   CORE WEB VITALS: content-visibility:auto
+   Defers rendering of off-screen sections (LCP/FID boost)
+   ============================================ */
+.popular-posts-section,
+.related-posts-section,
+.comments-section,
+.author-box,
+.site-footer {
+  content-visibility: auto;
+  /* contain-intrinsic-size reserves estimated height to prevent CLS */
+  contain-intrinsic-size: 0 400px;
+}
+
+.sidebar-widget {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 200px;
+}
+
+/* Article body sections below the fold */
+.article-content > h2 ~ *,
+.article-content > h3 ~ * {
+  /* Don't apply content-visibility to inline content — only block sections */
+}
+
+/* ============================================
+   PREFERS-REDUCED-MOTION
+   Removes animations for users who prefer reduced motion
+   (Accessibility + CLS improvement)
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .featured-post-card:hover .featured-img-wrap img {
+    transform: none;
+  }
+
+  .post-card,
+  .resource-card,
+  .popular-post-item,
+  .related-post-card {
+    transition: none;
+  }
+}
+
+/* ============================================
+   DARK MODE — prefers-color-scheme: dark
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #60a5fa;
+    --primary-dark: #93c5fd;
+    --secondary: #34d399;
+    --accent: #fb923c;
+    --accent-dark: #f97316;
+    --text: #f1f5f9;
+    --text-light: #94a3b8;
+    --text-muted: #64748b;
+    --bg: #0f172a;
+    --bg-alt: #1e293b;
+    --bg-warm: #1a1a2e;
+    --border: #334155;
+    --border-light: #1e293b;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+    --shadow: 0 4px 12px rgba(0,0,0,0.5);
+    --shadow-lg: 0 6px 20px rgba(0,0,0,0.6);
+  }
+
+  body {
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  .site-header {
+    background: #0f172a;
+    border-bottom-color: #334155;
+  }
+
+  .post-card,
+  .sidebar-widget,
+  .tool-card,
+  .resource-card,
+  .related-post-card,
+  .author-box {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .toc {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .highlight-box {
+    background: #1e3a5f;
+    border-color: #2563eb;
+  }
+
+  .highlight-box h4 { color: #93c5fd; }
+  .highlight-box p, .highlight-box ul { color: #bfdbfe; }
+
+  .tip-box {
+    background: #052e16;
+    border-color: #166534;
+  }
+  .tip-box h4 { color: #4ade80; }
+  .tip-box p, .tip-box ul { color: #86efac; }
+
+  .warning-box {
+    background: #431407;
+    border-color: #9a3412;
+  }
+  .warning-box h4, .warning-box p { color: #fdba74; }
+
+  .pull-quote {
+    background: #2d1a0e;
+    border-left-color: var(--accent);
+  }
+  .pull-quote blockquote { color: #fdba74; }
+
+  .pros {
+    background: #052e16;
+    border-color: #166534;
+  }
+  .pros h4 { color: #4ade80; }
+  .pros li { color: #86efac; }
+
+  .cons {
+    background: #2d0a0a;
+    border-color: #7f1d1d;
+  }
+  .cons h4 { color: #f87171; }
+  .cons li { color: #fca5a5; }
+
+  .newsletter-widget {
+    background: #0f172a;
+    border: 1px solid #334155;
+  }
+
+  .search-box input {
+    background: #1e293b;
+    border-color: #334155;
+    color: var(--text);
+  }
+
+  .breadcrumb a { color: #94a3b8; }
+
+  .ad-zone,
+  .ad-widget {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .article-content { color: #e2e8f0; }
+  .article-content h2,
+  .article-content h3 { color: #f1f5f9; border-bottom-color: #334155; }
+  .article-content strong { color: #f1f5f9; }
+}
+
+/* ============================================
+   PRINT STYLESHEET
+   ============================================ */
+@media print {
+  /* Reset for print */
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  /* Hide non-essential elements */
+  .site-header,
+  .site-nav,
+  .sidebar,
+  .article-sidebar,
+  .ad-zone,
+  .ad-widget,
+  .ad-leaderboard,
+  .ad-in-article,
+  .ad-sidebar,
+  .share-buttons,
+  .newsletter-widget,
+  .comments-section,
+  .popular-posts-section,
+  .related-posts-section,
+  .site-footer,
+  .hero-badges,
+  .btn-primary,
+  nav {
+    display: none !important;
+  }
+
+  /* Make article full-width */
+  .article-layout {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .article-main {
+    width: 100%;
+  }
+
+  /* Typography adjustments */
+  .article-title {
+    font-size: 22pt;
+    margin-bottom: 12pt;
+  }
+
+  .article-content {
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+
+  .article-content h2 {
+    font-size: 16pt;
+    page-break-after: avoid;
+  }
+
+  .article-content h3 {
+    font-size: 13pt;
+    page-break-after: avoid;
+  }
+
+  /* Avoid page breaks inside tool cards */
+  .tool-card,
+  .highlight-box,
+  .tip-box,
+  .warning-box,
+  .pros-cons {
+    page-break-inside: avoid;
+  }
+
+  /* Show full URLs for links */
+  a[href]::after {
+    content: ' (' attr(href) ')';
+    font-size: 9pt;
+    color: #555;
+  }
+
+  /* But not for nav links or buttons */
+  .site-nav a::after,
+  .btn-primary::after,
+  .nav-cta::after {
+    content: none;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  .article-hero {
+    height: auto !important;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  /* Breadcrumbs */
+  .breadcrumb { display: block; font-size: 9pt; margin-bottom: 12pt; }
+
+  /* TOC */
+  .toc {
+    border: 1pt solid #ccc;
+    padding: 10pt;
+    margin-bottom: 14pt;
+    page-break-inside: avoid;
+  }
+
+  /* Author box */
+  .author-box {
+    border: 1pt solid #ccc;
+    padding: 12pt;
+    margin-top: 20pt;
+    page-break-inside: avoid;
+  }
+
+  /* Print header */
+  .article-main::before {
+    content: 'AI Tools Hub — aitoolshub.com';
+    display: block;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 16pt;
+    border-bottom: 1pt solid #ccc;
+    padding-bottom: 6pt;
+  }
 }

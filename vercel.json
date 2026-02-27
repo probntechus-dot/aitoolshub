@@ -1,0 +1,233 @@
+{
+  "version": 2,
+  "name": "aitoolshub",
+
+  "redirects": [
+    {
+      "source": "/01-best-ai-tools-small-business-2024.html",
+      "destination": "/articles/best-ai-tools-small-business.html",
+      "permanent": true
+    },
+    {
+      "source": "/02-chatgpt-vs-claude-business-2024.html",
+      "destination": "/articles/chatgpt-vs-claude.html",
+      "permanent": true
+    },
+    {
+      "source": "/03-how-to-automate-small-business-with-ai.html",
+      "destination": "/articles/automate-small-business-ai.html",
+      "permanent": true
+    },
+    {
+      "source": "/04-zapier-ai-automation-guide.html",
+      "destination": "/articles/zapier-ai-automation-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/05-ai-content-creation-tools-comparison.html",
+      "destination": "/articles/ai-content-creation-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/06-make-vs-zapier-comparison.html",
+      "destination": "/articles/make-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/07-ai-customer-service-tools-small-business.html",
+      "destination": "/articles/ai-customer-service-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/08-notion-ai-review-2024.html",
+      "destination": "/articles/notion-ai-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/09-ai-marketing-tools-beginners.html",
+      "destination": "/articles/ai-marketing-tools-beginners.html",
+      "permanent": true
+    },
+    {
+      "source": "/10-save-10-hours-week-ai-tools.html",
+      "destination": "/articles/save-time-ai-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/11-midjourney-vs-dalle-business.html",
+      "destination": "/articles/midjourney-vs-dalle.html",
+      "permanent": true
+    },
+    {
+      "source": "/12-ai-tools-cost-vs-hiring-comparison.html",
+      "destination": "/articles/ai-tools-cost-vs-hiring.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01-best-ai-tools-small-business-2024.html",
+      "destination": "/articles/best-ai-tools-small-business.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02-chatgpt-vs-claude-business-2024.html",
+      "destination": "/articles/chatgpt-vs-claude.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03-how-to-automate-small-business-with-ai.html",
+      "destination": "/articles/automate-small-business-ai.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04-zapier-ai-automation-guide.html",
+      "destination": "/articles/zapier-ai-automation-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05-ai-content-creation-tools-comparison.html",
+      "destination": "/articles/ai-content-creation-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/06-make-vs-zapier-comparison.html",
+      "destination": "/articles/make-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/07-ai-customer-service-tools-small-business.html",
+      "destination": "/articles/ai-customer-service-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/08-notion-ai-review-2024.html",
+      "destination": "/articles/notion-ai-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/09-ai-marketing-tools-beginners.html",
+      "destination": "/articles/ai-marketing-tools-beginners.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/10-save-10-hours-week-ai-tools.html",
+      "destination": "/articles/save-time-ai-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/11-midjourney-vs-dalle-business.html",
+      "destination": "/articles/midjourney-vs-dalle.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/12-ai-tools-cost-vs-hiring-comparison.html",
+      "destination": "/articles/ai-tools-cost-vs-hiring.html",
+      "permanent": true
+    }
+  ],
+
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://partner.googleadservices.com https://tpc.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com; frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com; object-src 'none'; base-uri 'self'; form-action 'self';"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(jpg|jpeg|png|gif|webp|svg|ico|avif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(css|js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(html)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=3600"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=600"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=43200"
+        }
+      ]
+    },
+    {
+      "source": "/manifest.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/manifest+json"
+        }
+      ]
+    }
+  ],
+
+  "cleanUrls": false,
+  "trailingSlash": false
+}
