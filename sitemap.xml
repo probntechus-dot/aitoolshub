@@ -2,79 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aitoolshub.com/</loc>
-    <lastmod>2024-02-27</lastmod>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/01-best-ai-tools-small-business-2024.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://aitoolshub.com/about.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/02-chatgpt-vs-claude-business-2024.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://aitoolshub.com/resources.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/03-how-to-automate-small-business-with-ai.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://aitoolshub.com/contact.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/04-zapier-ai-automation-guide.html</loc>
-    <lastmod>2024-02-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aitoolshub.com/articles/05-ai-content-creation-tools-comparison.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/best-ai-tools-small-business.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/06-make-vs-zapier-comparison.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/chatgpt-vs-claude.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/07-ai-customer-service-tools-small-business.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/automate-small-business-ai.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/08-notion-ai-review-2024.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/zapier-ai-automation-guide.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/09-ai-marketing-tools-beginners.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/ai-content-creation-tools.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/10-save-10-hours-week-ai-tools.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/make-vs-zapier.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/11-midjourney-vs-dalle-business.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/ai-customer-service-tools.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/articles/12-ai-tools-cost-vs-hiring-comparison.html</loc>
-    <lastmod>2024-02-27</lastmod>
+    <loc>https://aitoolshub.com/articles/notion-ai-review.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aitoolshub.com/articles/ai-marketing-tools-beginners.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aitoolshub.com/articles/save-time-ai-tools.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aitoolshub.com/articles/midjourney-vs-dalle.html</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aitoolshub.com/articles/ai-tools-cost-vs-hiring.html</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

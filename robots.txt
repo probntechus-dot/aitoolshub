@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://aitoolshub.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Block admin/private if any
+# Disallow: /admin/
