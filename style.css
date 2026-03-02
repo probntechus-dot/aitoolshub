@@ -968,3 +968,256 @@ img {
 }
 
 .meta-sep { color: var(--border
+
+/* ============================================
+   DESIGN ELEVATION — Premium White Theme
+   ============================================ */
+
+:root {
+  --primary: #1d4ed8;
+  --primary-light: #3b82f6;
+  --primary-dark: #1e40af;
+  --accent: #f59e0b;
+  --accent-warm: #d97706;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --text-muted: #9ca3af;
+  --bg: #ffffff;
+  --bg-alt: #fafafa;
+  --bg-warm: #fefdf8;
+  --border: #e5e7eb;
+  --border-light: #f3f4f6;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.12);
+  --max-width: 1200px;
+  --content-width: 720px;
+  --sidebar-width: 330px;
+  --font-sans: 'Open Sans', Arial, Helvetica, sans-serif;
+  --font-serif: 'PT Serif', Georgia, 'Times New Roman', serif;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hero section - elegant white gradient */
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #eff6ff 100%);
+  padding: 80px 0;
+  text-align: center;
+  color: #1f2937;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(59,130,246,0.03)" stroke-width="0.5"/></pattern></defs><rect width="1200" height="120" fill="url(%23grid)" /></svg>');
+  opacity: 0.5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-family: var(--font-sans);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-desc {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--font-sans);
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.badge {
+  background: white;
+  border: 1.5px solid #e5e7eb;
+  color: #4b5563;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all var(--transition);
+}
+
+.badge:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Featured post - premium white card */
+.featured-post-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: white;
+  position: relative;
+  border: 1px solid #f0f4f8;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.featured-post-card:hover {
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.15);
+  transform: translateY(-4px);
+}
+
+.featured-content {
+  padding: 48px 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 4px solid #3b82f6;
+}
+
+.featured-content h2 {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.featured-content .excerpt {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-family: var(--font-sans);
+}
+
+/* Post cards - elevated design */
+.post-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #f0f4f8;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.post-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  border-color: #3b82f6;
+}
+
+.post-card-img-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.post-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.post-card:hover .post-card-img {
+  transform: scale(1.05);
+}
+
+.post-card-category {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: white;
+  color: #1d4ed8;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-family: var(--font-sans);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.post-card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Newsletter widget - warm gradient */
+.newsletter-widget {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0f7ff 100%);
+  color: #1f2937;
+  border: 1.5px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+}
+
+.newsletter-widget .widget-title {
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.newsletter-form input {
+  background: white;
+  border: 1.5px solid #bfdbfe;
+  color: var(--text);
+}
+
+.newsletter-form button {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: all var(--transition);
+}
+
+.newsletter-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
