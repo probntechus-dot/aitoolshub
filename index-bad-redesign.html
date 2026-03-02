@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO -->
+    <title>AI Tools Reviews by Sarah Mitchell | Honest Testing 2026</title>
+    <meta name="description" content="Real AI tool reviews by Sarah Mitchell. Tested ChatGPT, Claude, Make.com, Zapier, and 100+ others in my small business. Honest opinions, no fluff.">
+    <meta name="author" content="Sarah Mitchell">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI Tools Reviews by Sarah Mitchell">
+    <meta property="og:description" content="Real AI tool reviews. Tested for months in real business scenarios.">
+    <meta property="og:url" content="https://aitoolshub.com/">
+    <meta property="og:site_name" content="AI Tools Hub">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Tools Reviews by Sarah Mitchell">
+    <meta name="twitter:description" content="Real reviews of AI tools tested in my small business.">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "AI Tools Hub",
+      "description": "Honest reviews of AI tools tested in real business scenarios",
+      "url": "https://aitoolshub.com",
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Mitchell",
+        "image": "https://aitoolshub.com/images/author-photo.jpg",
+        "jobTitle": "AI Tools Reviewer & Small Business Owner"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AI Tools Hub",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://aitoolshub.com/favicon.svg"
+        }
+      }
+    }
+    </script>
+    
+    <style>
+    /* Homepage specific styles */
+    .hero-section {
+        background: linear-gradient(135deg, #0a5ab3 0%, #1e7bc4 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        opacity: 0.95;
+    }
+    
+    .hero-cta {
+        display: inline-block;
+        background: white;
+        color: #0a5ab3;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s;
+    }
+    
+    .hero-cta:hover {
+        transform: translateY(-2px);
+    }
+    
+    .author-intro {
+        background: #f8f9fa;
+        padding: 40px 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+    
+    .author-intro-content {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .author-photo-small {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #ddd;
+        flex-shrink: 0;
+    }
+    
+    .author-text h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    
+    .author-text p {
+        margin: 10px 0;
+        line-height: 1.6;
+        color: #333;
+    }
+    
+    .recent-posts {
+        max-width: 1000px;
+        margin: 60px auto 0;
+        padding: 0 20px;
+    }
+    
+    .recent-posts h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #0a5ab3;
+    }
+    
+    .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    
+    .post-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: box-shadow 0.3s;
+    }
+    
+    .post-card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .post-card-img {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(135deg, #0a5ab3 0%, #1e7bc4 100%);
+        object-fit: cover;
+    }
+    
+    .post-card-content {
+        padding: 20px;
+    }
+    
+    .post-card-content h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.1rem;
+    }
+    
+    .post-card-content h3 a {
+        color: #0a5ab3;
+        text-decoration: none;
+    }
+    
+    .post-card-content h3 a:hover {
+        text-decoration: underline;
+    }
+    
+    .post-meta {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 10px 0;
+    }
+    
+    .post-excerpt {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+    }
+    
+    .read-more {
+        display: inline-block;
+        color: #0a5ab3;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s;
+    }
+    
+    .read-more:hover {
+        color: #1e7bc4;
+    }
+    
+    .newsletter-cta {
+        background: #f0f7ff;
+        border-left: 4px solid #0a5ab3;
+        padding: 30px;
+        margin: 60px 0;
+        border-radius: 4px;
+        text-align: center;
+    }
+    
+    .newsletter-cta h3 {
+        margin-top: 0;
+        color: #0a5ab3;
+    }
+    
+    .newsletter-cta p {
+        margin: 10px 0 20px 0;
+    }
+    
+    .newsletter-form {
+        display: flex;
+        gap: 10px;
+        max-width: 400px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .newsletter-form input {
+        flex: 1;
+        min-width: 200px;
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+    
+    .newsletter-form button {
+        padding: 10px 25px;
+        background: #0a5ab3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 0.2s;
+    }
+    
+    .newsletter-form button:hover {
+        background: #1e7bc4;
+    }
+    
+    @media (max-width: 600px) {
+        .hero-content h1 {
+            font-size: 1.8rem;
+        }
+        
+        .author-intro-content {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .recent-posts h2 {
+            font-size: 1.5rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="/">
+                    <svg class="logo" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+                    </svg>
+                    AI Tools Hub
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/resources.html">Tools Directory</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>I Tested 100+ AI Tools So You Don't Waste Time</h1>
+            <p>Honest reviews of ChatGPT, Claude, Make.com, Zapier, and everything in between. No fluff. Just real testing in a real small business.</p>
+            <a href="#recent-posts" class="hero-cta">Read Latest Reviews</a>
+        </div>
+    </section>
+    
+    <!-- Author Intro -->
+    <section class="author-intro">
+        <div class="author-intro-content">
+            <img src="/images/author-placeholder.jpg" alt="Sarah Mitchell" class="author-photo-small" loading="lazy">
+            <div class="author-text">
+                <h2>Hi, I'm Sarah Mitchell</h2>
+                <p><strong>AI Tools Reviewer & Small Business Owner</strong></p>
+                <p>I've been building and running small businesses since 2012. In 2023, I started testing AI tools to save time. What started as curiosity became an obsession. Now I spend 40+ hours/week testing new tools and sharing honest reviews.</p>
+                <p>Every tool on this site? I've tested it for at least 2-4 weeks. I measure time saved, ROI, learning curve, and real-world usability. No affiliate bias. Just honest opinions.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Recent Posts -->
+    <section class="recent-posts" id="recent-posts">
+        <h2>Latest Reviews</h2>
+        
+        <div class="posts-grid">
+            <!-- Post 1: ChatGPT vs Claude -->
+            <article class="post-card">
+                <div class="post-card-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                <div class="post-card-content">
+                    <h3><a href="/articles/chatgpt-vs-claude.html">ChatGPT vs Claude: I Tested Both for a Month</a></h3>
+                    <div class="post-meta">
+                        <strong>By Sarah Mitchell</strong> | Mar 1, 2026 | 10 min read
+                    </div>
+                    <p class="post-excerpt">I used ChatGPT and Claude daily for a month to write, code, and brainstorm. Here's my honest comparison and which one I recommend for different tasks.</p>
+                    <a href="/articles/chatgpt-vs-claude.html" class="read-more">Read Full Review →</a>
+                </div>
+            </article>
+            
+            <!-- Post 2: Make.com vs Zapier -->
+            <article class="post-card">
+                <div class="post-card-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                <div class="post-card-content">
+                    <h3><a href="/articles/make-vs-zapier.html">Make.com vs Zapier 2026: Which is Better?</a></h3>
+                    <div class="post-meta">
+                        <strong>By Sarah Mitchell</strong> | Feb 28, 2026 | 12 min read
+                    </div>
+                    <p class="post-excerpt">Automation battle: I set up the same workflow in both Make and Zapier. Here's speed, pricing, ease of use, and when to use each one.</p>
+                    <a href="/articles/make-vs-zapier.html" class="read-more">Read Full Review →</a>
+                </div>
+            </article>
+            
+            <!-- Post 3: AI Tools Mistakes -->
+            <article class="post-card">
+                <div class="post-card-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                <div class="post-card-content">
+                    <h3><a href="/articles/ai-tools-mistakes.html">5 Mistakes I Made with AI Tools (And How to Avoid Them)</a></h3>
+                    <div class="post-meta">
+                        <strong>By Sarah Mitchell</strong> | Feb 25, 2026 | 8 min read
+                    </div>
+                    <p class="post-excerpt">I paid for tools I didn't need. I skipped the tutorials. I expected magic. Here are my biggest mistakes and lessons learned.</p>
+                    <a href="/articles/ai-tools-mistakes.html" class="read-more">Learn from My Mistakes →</a>
+                </div>
+            </article>
+            
+            <!-- Post 4: Best AI Tools for Small Business -->
+            <article class="post-card">
+                <div class="post-card-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                <div class="post-card-content">
+                    <h3><a href="/articles/best-ai-tools-small-business.html">Best AI Tools for Small Business in 2026</a></h3>
+                    <div class="post-meta">
+                        <strong>By Sarah Mitchell</strong> | Feb 20, 2026 | 15 min read
+                    </div>
+                    <p class="post-excerpt">Not all AI tools are for you. Here are the ones that actually help small business owners save time and make money.</p>
+                    <a href="/articles/best-ai-tools-small-business.html" class="read-more">View Recommendations →</a>
+                </div>
+            </article>
+            
+            <!-- Post 5: AI Content Creation Tools Comparison -->
+            <article class="post-card">
+                <div class="post-card-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                <div class="post-card-content">
+                    <h3><a href="/articles/ai-content-creation-tools-comparison.html">Best AI Writing Tools for Content Creators</a></h3>
+                    <div class="post-meta">
+                        <strong>By Sarah Mitchell</strong> | Feb 18, 2026 | 11 min read
+                    </div>
+                    <p class="post-excerpt">Tested 15 AI writing tools. Which ones actually produce usable content? Which are just hype? Full comparison inside.</p>
+                    <a href="/articles/ai-content-creation-tools-comparison.html" class="read-more">See Comparison →</a>
+                </div>
+            </article>
+            
+            <!-- Post 6: Zapier Tutorial -->
+            <article class="post-card">
+                <div class="post-card-img" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                <div class="post-card-content">
+                    <h3><a href="/articles/zapier-ai-automation-guide.html">Zapier Tutorial: How to Automate Email in 15 Minutes</a></h3>
+                    <div class="post-meta">
+                        <strong>By Sarah Mitchell</strong> | Feb 15, 2026 | 9 min read
+                    </div>
+                    <p class="post-excerpt">Step-by-step guide to your first Zapier automation. No coding needed. Screenshots included. Done in under 15 minutes.</p>
+                    <a href="/articles/zapier-ai-automation-guide.html" class="read-more">Start Tutorial →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Newsletter CTA -->
+    <section class="newsletter-cta">
+        <h3>Get Reviews in Your Inbox</h3>
+        <p>New AI tool reviews, automation tips, and small business hacks. No spam. 1 email per week.</p>
+        <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="your@email.com" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="/about.html">About Sarah</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/resources.html">Tools Directory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Tools Hub. All rights reserved. | By <a href="/about.html">Sarah Mitchell</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        // gtag('config', 'G-PLACEHOLDER'); // Add your GA4 ID
+    </script>
+</body>
+</html>
