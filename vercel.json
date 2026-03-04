@@ -4,6 +4,11 @@
 
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/01-best-ai-tools-small-business-2024.html",
       "destination": "/articles/best-ai-tools-small-business.html",
       "permanent": true
@@ -228,6 +233,6 @@
     }
   ],
 
-  "cleanUrls": false,
+  "cleanUrls": true,
   "trailingSlash": false
 }
