@@ -9,6 +9,86 @@
       "permanent": true
     },
     {
+      "source": "/privacy",
+      "destination": "/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/disclaimer.html",
+      "permanent": true
+    },
+    {
+      "source": "/comparisons",
+      "destination": "/resources.html",
+      "permanent": true
+    },
+    {
+      "source": "/claude-vs-gpt4o-2026.html",
+      "destination": "/articles/claude-vs-gpt4o-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-ai-tools-content-creators-2026.html",
+      "destination": "/articles/best-ai-tools-content-creators-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/using-claude-data-analysis.html",
+      "destination": "/articles/how-to-use-claude-for-data-analysis.html",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-use-chatgpt-copywriting.html",
+      "destination": "/articles/how-to-maximize-chatgpt-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai-agents-2026.html",
+      "destination": "/articles/how-to-build-ai-agents-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/ai-video-editing-without-skills.html",
+      "destination": "/articles/best-ai-video-editors-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-content-creation-tools-comparison.html",
+      "destination": "/articles/ai-content-creation-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01-best-ai-tools-small-business-2024.html",
+      "destination": "/articles/best-ai-tools-small-business.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02-chatgpt-vs-claude-business-2024.html",
+      "destination": "/articles/chatgpt-vs-claude.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03-how-to-automate-small-business-with-ai.html",
+      "destination": "/articles/automate-small-business-ai.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/06-make-vs-zapier-comparison.html",
+      "destination": "/articles/make-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/08-notion-ai-review-2024.html",
+      "destination": "/articles/notion-ai-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/10-save-10-hours-week-ai-tools.html",
+      "destination": "/articles/save-time-ai-tools.html",
+      "permanent": true
+    },
+    {
       "source": "/01-best-ai-tools-small-business-2024.html",
       "destination": "/articles/best-ai-tools-small-business.html",
       "permanent": true
