@@ -13,12 +13,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://aitoolshub.com/resources.html</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://aitoolshub.com/contact.html</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -32,6 +26,12 @@
   </url>
   <url>
     <loc>https://aitoolshub.com/disclaimer.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aitoolshub.com/resources.html</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -5,11 +5,4 @@ Disallow: /private/
 Disallow: /search?
 Disallow: /*.json$
 
-User-agent: Googlebot
-Allow: /
-
-Sitemap: https://aitoolshub.vercel.app/sitemap.xml
 Sitemap: https://aitoolshub.com/sitemap.xml
-
-# Crawl delay for all bots
-Crawl-delay: 1
