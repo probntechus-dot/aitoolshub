@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midjourney for Beginners: Your First Image in 10 Minutes | AI Tools Hub</title>
+  <meta name="description" content="A step-by-step beginner's guide to Midjourney. Learn how to set up Discord, write your first prompt, use styles and parameters, and create stunning AI images in minutes.">
+  <link rel="canonical" href="https://aitoolshub.com/articles/how-to-use-midjourney-step-by-step.html">
+  <link rel="stylesheet" href="../style.css">
+
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Midjourney for Beginners: Your First Image in 10 Minutes">
+  <meta property="og:description" content="A step-by-step beginner's guide to Midjourney. Learn how to set up Discord, write your first prompt, use styles and parameters, and create stunning AI images in minutes.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aitoolshub.com/articles/how-to-use-midjourney-step-by-step.html">
+  <meta property="og:site_name" content="AI Tools Hub">
+  <meta property="article:published_time" content="2026-03-14">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Midjourney for Beginners: Your First Image in 10 Minutes">
+  <meta name="twitter:description" content="A step-by-step beginner's guide to Midjourney. Learn how to set up Discord, write your first prompt, use styles and parameters, and create stunning AI images in minutes.">
+
+  <meta property="og:image" content="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&q=80">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&q=80">
+
+  <script type="application/ld+json" data-schema="article">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Midjourney for Beginners: Your First Image in 10 Minutes",
+    "description": "A step-by-step beginner's guide to Midjourney. Learn how to set up Discord, write your first prompt, use styles and parameters, and create stunning AI images in minutes.",
+    "author": {"@type": "Person", "name": "Sarah Mitchell"},
+    "datePublished": "2026-03-14",
+    "dateModified": "2026-03-14",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aitoolshub.com/articles/how-to-use-midjourney-step-by-step.html"},
+    "publisher": {"@type": "Organization", "name": "AI Tools Hub"}
+  }
+  </script>
+
+  <script type="application/ld+json" data-schema="faq">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Midjourney free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Midjourney no longer offers a free trial. The Basic plan starts at $10/month and gives you about 200 image generations. For most beginners experimenting with prompts, this is plenty for a month. You can cancel anytime."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to know how to use Discord to use Midjourney?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You need a Discord account, but you don't need to be a Discord expert. Midjourney now also has a web interface at midjourney.com where you can generate images directly. However, many advanced features and the community are still centered on Discord."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use Midjourney images commercially?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if you have a paid subscription. All paid Midjourney plans include commercial usage rights. Free trial images (when available) are licensed under Creative Commons Noncommercial 4.0 and cannot be used for commercial purposes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between Midjourney v6 and v7?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Midjourney v7 (the latest as of early 2026) offers significantly better text rendering in images, more photorealistic outputs, improved hand and finger generation, and better understanding of spatial relationships in prompts. It's the default model and recommended for most users."
+        }
+      }
+    ]
+  }
+  </script>
+
+<style>
+.infini-share-bar{display:flex;gap:8px;margin:24px 0;flex-wrap:wrap}
+.infini-share-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;transition:.2s}
+.infini-share-twitter{background:#1DA1F2;color:#fff}.infini-share-twitter:hover{background:#0d8ecf}
+.infini-share-linkedin{background:#0A66C2;color:#fff}.infini-share-linkedin:hover{background:#084e96}
+.infini-share-whatsapp{background:#25D366;color:#fff}.infini-share-whatsapp:hover{background:#1da851}
+.infini-share-facebook{background:#1877F2;color:#fff}.infini-share-facebook:hover{background:#0d65d9}
+.infini-newsletter-cta{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border-radius:16px;padding:32px;margin:32px 0;text-align:center;color:#fff}
+.infini-newsletter-cta h3{margin:0 0 8px;font-size:22px}
+.infini-newsletter-cta p{margin:0 0 16px;opacity:.9}
+.infini-newsletter-cta .cta-btn{display:inline-block;padding:12px 28px;background:#fff;color:#764ba2;border-radius:10px;font-weight:700;text-decoration:none}
+.infini-back-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;border-radius:50%;background:#111;color:#fff;border:none;cursor:pointer;font-size:20px;display:none;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.infini-reading-time{display:inline-flex;align-items:center;gap:4px;color:#666;font-size:14px;margin-bottom:16px}
+.infini-disclosure{background:#f8f9fa;border:1px solid #e9ecef;border-radius:8px;padding:12px 16px;font-size:12px;color:#666;margin:24px 0;line-height:1.5}
+.prompt-example{background:#1e1e2e;color:#a6e3a1;padding:16px 20px;border-radius:10px;font-family:'Courier New',monospace;font-size:14px;margin:12px 0;overflow-x:auto;line-height:1.6}
+.prompt-example .command{color:#89b4fa}
+.prompt-example .param{color:#f9e2af}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">
+      <div class="logo-icon">AI</div>
+      <div class="logo-text">AI Tools <span>Hub</span></div>
+    </a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/#categories">Categories</a>
+      <a href="/resources.html">Resources</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/#newsletter" class="nav-cta">📧 Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container" style="margin-top:20px;">
+  <div class="ad-zone ad-leaderboard"><span>Advertisement — 728×90 Leaderboard</span></div>
+</div>
+
+<div class="article-layout">
+<article class="article-main">
+
+  <nav class="breadcrumb">
+    <a href="/">Home</a>
+    <span class="sep">›</span>
+    <a href="#">Image Generation</a>
+    <span class="sep">›</span>
+    <span>Midjourney for Beginners</span>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-category-tag">🎨 Image Generation</div>
+    <h1 class="article-title">Midjourney for Beginners: Your First Image in 10 Minutes</h1>
+    <div class="infini-reading-time">⏱ 11 min read</div>
+    <div class="article-meta">
+      <span class="author">By Sarah Mitchell</span>
+      <span class="date">March 14, 2026</span>
+    </div>
+  </header>
+
+  <div class="infini-disclosure">
+    <strong>Disclosure:</strong> Some links in this article are affiliate links. If you purchase through them, we may earn a commission at no extra cost to you. We only recommend tools we've personally tested.
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80" alt="Colorful abstract digital art representing AI-generated imagery with Midjourney" style="width:100%;border-radius:12px;margin-bottom:24px;" loading="eager">
+
+  <p>I remember the first time I saw a Midjourney image. My friend sent me a fantasy castle at sunset, and I was convinced it was a digital painting that took hours. When she told me an AI made it in 60 seconds from a text description, I honestly didn't believe her.</p>
+
+  <p>That was a year ago. Since then, I've generated thousands of images with Midjourney — for blog posts, social media, client projects, and honestly, just for fun. And the tool has gotten even more powerful.</p>
+
+  <p>If you're brand new to Midjourney and feeling overwhelmed by all the parameters, prompting techniques, and Discord confusion — don't worry. I'm going to walk you through everything from zero. By the end of this guide, you'll have created your first AI image.</p>
+
+  <p>Let's do this in 10 minutes.</p>
+
+  <h2>What Is Midjourney, Exactly?</h2>
+
+  <p>Midjourney is an AI image generator. You type a text description (called a "prompt"), and it creates an image based on what you described. Think of it as having a very talented artist on speed dial who works in seconds instead of hours.</p>
+
+  <p>What makes Midjourney different from other AI image tools like DALL-E or Stable Diffusion? Two things: the aesthetic quality (Midjourney images just <em>look</em> better — more artistic, more polished) and the community (hundreds of thousands of creators sharing prompts and techniques).</p>
+
+  <h2>Step 1: Setting Up Your Account (3 Minutes)</h2>
+
+  <img src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=800&q=80" alt="Discord app interface on a computer screen showing the setup process for Midjourney" style="width:100%;border-radius:12px;margin:24px 0;" loading="lazy">
+
+  <p>Midjourney operates through Discord (a chat platform) and through their web app. Here's how to get started:</p>
+
+  <h3>Option A: Discord Setup (Traditional Method)</h3>
+
+  <ol>
+    <li><strong>Create a Discord account</strong> at <a href="https://discord.com" target="_blank" rel="noopener">discord.com</a> if you don't have one. It's free and takes about a minute.</li>
+    <li><strong>Go to <a href="https://midjourney.com" target="_blank" rel="noopener">midjourney.com</a></strong> and click "Join the Beta" or "Sign In."</li>
+    <li><strong>Subscribe to a plan.</strong> The Basic plan ($10/month) is perfect for beginners. You get about 200 image generations, which is plenty for learning the ropes.</li>
+    <li><strong>Join the Midjourney Discord server.</strong> After subscribing, you'll get access to the server with all the image generation channels.</li>
+  </ol>
+
+  <h3>Option B: Web Interface (Easier for Non-Discord Users)</h3>
+
+  <p>Midjourney now has a web interface at midjourney.com where you can generate images directly in your browser. No Discord required. It's cleaner and less overwhelming for beginners. You still need a subscription, but the generation experience is simpler.</p>
+
+  <p>I'd recommend starting with the web interface if Discord feels confusing, then exploring Discord later for the community features.</p>
+
+  <h2>Step 2: Writing Your First Prompt (2 Minutes)</h2>
+
+  <p>This is the exciting part. A "prompt" is just a text description of the image you want. You type it, Midjourney interprets it, and out comes an image (actually four variations).</p>
+
+  <p>In Discord, go to any <code>#newbies</code> channel and type:</p>
+
+  <div class="prompt-example">
+    <span class="command">/imagine</span> prompt: a golden retriever puppy sitting in a field of sunflowers, warm afternoon light, photograph
+  </div>
+
+  <p>On the web interface, just type the description in the prompt box — no <code>/imagine</code> needed.</p>
+
+  <p>Hit enter and wait about 30-60 seconds. Midjourney will generate four image variations. That's it — you've created your first AI image!</p>
+
+  <h3>What Happens Next</h3>
+
+  <p>Under your four images, you'll see buttons labeled <strong>U1, U2, U3, U4</strong> (upscale) and <strong>V1, V2, V3, V4</strong> (variations):</p>
+
+  <ul>
+    <li><strong>U buttons</strong> upscale the image — they give you a higher-resolution version of that specific image. Hit the U button for whichever of the four you like most.</li>
+    <li><strong>V buttons</strong> create new variations — Midjourney generates four new images inspired by the one you picked, but with slight differences. Use this when you like the direction but want to explore alternatives.</li>
+    <li><strong>🔄 button</strong> reruns the entire prompt to get four completely new images.</li>
+  </ul>
+
+  <h2>Step 3: Writing Better Prompts (The Real Skill)</h2>
+
+  <p>The difference between a mediocre Midjourney image and a jaw-dropping one is almost always the prompt. Here's how to write prompts that get great results:</p>
+
+  <h3>The Prompt Formula</h3>
+
+  <p>Think of your prompt in four parts:</p>
+
+  <div class="prompt-example">
+    [Subject] + [Details/Style] + [Lighting/Mood] + [Technical specifications]
+  </div>
+
+  <p>Here's a basic prompt vs. a good prompt:</p>
+
+  <p><strong>Basic:</strong></p>
+  <div class="prompt-example">a cat</div>
+
+  <p><strong>Good:</strong></p>
+  <div class="prompt-example">a tabby cat sleeping on a stack of old books in a cozy library, dust particles floating in golden window light, oil painting style, warm earth tones, detailed fur texture</div>
+
+  <p>See the difference? The second prompt gives Midjourney specific information about the subject (tabby cat, sleeping), the setting (library, old books), the mood (cozy, golden light), and the style (oil painting, warm tones).</p>
+
+  <h3>Prompt Tips That Make a Huge Difference</h3>
+
+  <p><strong>Be specific about what you want.</strong> "A woman" is vague. "A middle-aged woman with silver hair wearing a blue linen shirt, laughing, candid portrait" gives Midjourney something concrete to work with.</p>
+
+  <p><strong>Name art styles.</strong> Adding style references dramatically changes results. Try appending these to any prompt:</p>
+
+  <ul>
+    <li><code>in the style of Studio Ghibli</code> — soft, anime-inspired, dreamy</li>
+    <li><code>photorealistic, shot on Canon EOS R5</code> — looks like a real photograph</li>
+    <li><code>watercolor illustration</code> — soft, artistic, hand-painted feel</li>
+    <li><code>cyberpunk aesthetic, neon lighting</code> — futuristic, vibrant, dramatic</li>
+    <li><code>minimalist flat vector illustration</code> — clean, modern, graphic design style</li>
+  </ul>
+
+  <p><strong>Describe what you DON'T want.</strong> Use <code>--no</code> to exclude elements. For example:</p>
+
+  <div class="prompt-example">
+    a peaceful mountain lake at sunrise <span class="param">--no</span> people, buildings, text
+  </div>
+
+  <h2>Step 4: Mastering Parameters</h2>
+
+  <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80" alt="Abstract colorful gradient art representing the various creative parameters available in Midjourney" style="width:100%;border-radius:12px;margin:24px 0;" loading="lazy">
+
+  <p>Parameters are the settings you add to the end of your prompt to control how Midjourney generates the image. Here are the ones you'll use most:</p>
+
+  <h3>Aspect Ratio (--ar)</h3>
+
+  <p>By default, Midjourney creates square images (1:1). You can change this:</p>
+
+  <div class="prompt-example">
+    a sweeping desert scene at golden hour <span class="param">--ar 16:9</span>
+  </div>
+
+  <p>Common aspect ratios:</p>
+  <ul>
+    <li><code>--ar 16:9</code> — widescreen (great for desktop wallpapers, YouTube thumbnails)</li>
+    <li><code>--ar 9:16</code> — vertical (perfect for phone wallpapers, Instagram Stories, TikTok)</li>
+    <li><code>--ar 3:2</code> — classic photo ratio</li>
+    <li><code>--ar 2:3</code> — portrait orientation (Pinterest pins, book covers)</li>
+  </ul>
+
+  <h3>Stylize (--stylize or --s)</h3>
+
+  <p>This controls how "artistic" Midjourney gets with your prompt. Higher values = more artistic interpretation. Lower values = closer to your literal description.</p>
+
+  <div class="prompt-example">
+    a red barn in a wheat field <span class="param">--s 50</span>  (more literal)<br>
+    a red barn in a wheat field <span class="param">--s 750</span> (more artistic)
+  </div>
+
+  <p>The default is 100. I usually keep it between 100-300 for realistic images and crank it up to 500+ when I want something more creative and unexpected.</p>
+
+  <h3>Chaos (--chaos or --c)</h3>
+
+  <p>Controls how different the four image variations are from each other. Low chaos = all four look similar. High chaos = wildly different interpretations.</p>
+
+  <div class="prompt-example">
+    abstract cityscape <span class="param">--c 80</span>
+  </div>
+
+  <p>I use high chaos (50-100) when exploring ideas and low chaos (0-20) when I know what I want and just want slight variations to choose from.</p>
+
+  <h3>Quality (--quality or --q)</h3>
+
+  <p>Controls generation quality and speed. Higher quality takes longer but produces more detailed images.</p>
+
+  <ul>
+    <li><code>--q .5</code> — fast, less detailed (good for rapid testing)</li>
+    <li><code>--q 1</code> — default, balanced</li>
+    <li><code>--q 2</code> — higher detail, uses more GPU time</li>
+  </ul>
+
+  <h2>Step 5: Advanced Techniques (Once You're Comfortable)</h2>
+
+  <p>Once you've generated a few dozen images and feel comfortable with basic prompting, here are some power-user techniques:</p>
+
+  <h3>Image References</h3>
+
+  <p>You can upload an image and ask Midjourney to use it as a reference. This is incredibly powerful for maintaining a consistent style across multiple images. Just drag an image into Discord, copy its URL, and include it in your prompt:</p>
+
+  <div class="prompt-example">
+    <span class="command">/imagine</span> prompt: [image URL] a woman walking through a rainy Tokyo street at night <span class="param">--iw 1.5</span>
+  </div>
+
+  <p>The <code>--iw</code> parameter controls how much influence the reference image has. Higher = more similar to the reference.</p>
+
+  <h3>Style References (--sref)</h3>
+
+  <p>Want all your images to share a consistent visual style? Use a style reference:</p>
+
+  <div class="prompt-example">
+    a cozy bookshop interior <span class="param">--sref [URL of an image with the style you want]</span>
+  </div>
+
+  <p>This is perfect for creating a series of images for a brand, blog, or social media account that all feel visually cohesive.</p>
+
+  <h3>Multi-Prompts</h3>
+
+  <p>Use double colons to give different parts of your prompt different weights:</p>
+
+  <div class="prompt-example">
+    space:: galaxy:: nebula <span class="param">::2</span> astronaut <span class="param">::1</span>
+  </div>
+
+  <p>The numbers after <code>::</code> tell Midjourney how much emphasis to put on each concept. In this example, the nebula gets twice the emphasis of the astronaut.</p>
+
+  <h2>10 Prompt Ideas to Get You Started</h2>
+
+  <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800&q=80" alt="Colorful creative inspiration board representing diverse AI image generation prompt ideas" style="width:100%;border-radius:12px;margin:24px 0;" loading="lazy">
+
+  <p>Not sure what to create? Try these prompts (copy and paste them directly):</p>
+
+  <ol>
+    <li><code>a tiny dragon sleeping inside a coffee cup, steam rising, macro photography, shallow depth of field</code></li>
+    <li><code>an underwater city with bioluminescent architecture, deep ocean, ethereal blue light --ar 16:9</code></li>
+    <li><code>a street food vendor in Bangkok at night, neon signs reflecting in rain puddles, cinematic photography --ar 3:2</code></li>
+    <li><code>a cozy reading nook in a treehouse, fairy lights, autumn leaves visible through the window, watercolor illustration</code></li>
+    <li><code>a retro 1970s living room with orange shag carpet and wood paneling, vintage photograph style, warm film grain</code></li>
+    <li><code>a surreal clock melting over a desert vista, Salvador Dali inspired, dreamlike atmosphere --s 500</code></li>
+    <li><code>isometric view of a tiny Japanese garden with a koi pond, miniature world, soft pastel colors, 3D render</code></li>
+    <li><code>a wolf howling on a snowy mountain peak under northern lights, epic wide-angle photography --ar 21:9</code></li>
+    <li><code>a vintage apothecary shop filled with colorful potion bottles, dust and light rays, dark academia aesthetic</code></li>
+    <li><code>abstract geometric pattern inspired by Islamic architecture, gold and deep blue, seamless tile design</code></li>
+  </ol>
+
+  <h2>Common Beginner Mistakes (And How to Avoid Them)</h2>
+
+  <p><strong>Writing prompts that are too short.</strong> "A dog" will give you a generic dog image. Add details. What breed? What setting? What mood? What style?</p>
+
+  <p><strong>Writing prompts that are too long.</strong> Midjourney can only process so much text. Keep prompts under 60 words. If you need more detail, use parameters and image references instead of adding more words.</p>
+
+  <p><strong>Forgetting to specify aspect ratio.</strong> If you need an image for a specific use (blog header, Instagram post, phone wallpaper), always set <code>--ar</code>. Otherwise you'll get square images that need cropping.</p>
+
+  <p><strong>Not using the community.</strong> The Midjourney Discord has channels where people share their prompts alongside the images they generated. This is the fastest way to learn what works. Spend 15 minutes browsing community galleries before you start — it's incredibly inspiring.</p>
+
+  <p><strong>Getting frustrated with hands and text.</strong> AI image generators have historically struggled with hands and readable text. The latest versions (v7) are much better, but it's still not perfect. If text is important, plan to add it in a graphic design tool like Canva afterward.</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Is Midjourney free to use?</h3>
+  <p>Midjourney no longer offers a free trial. The Basic plan starts at $10/month and gives you about 200 image generations. For most beginners experimenting with prompts, this is plenty for a month. You can cancel anytime.</p>
+
+  <h3>Do I need to know how to use Discord to use Midjourney?</h3>
+  <p>You need a Discord account, but you don't need to be a Discord expert. Midjourney now also has a web interface at midjourney.com where you can generate images directly. However, many advanced features and the community are still centered on Discord.</p>
+
+  <h3>Can I use Midjourney images commercially?</h3>
+  <p>Yes, if you have a paid subscription. All paid Midjourney plans include commercial usage rights. Free trial images (when available) are licensed under Creative Commons Noncommercial 4.0 and cannot be used for commercial purposes.</p>
+
+  <h3>What's the difference between Midjourney v6 and v7?</h3>
+  <p>Midjourney v7 (the latest as of early 2026) offers significantly better text rendering in images, more photorealistic outputs, improved hand and finger generation, and better understanding of spatial relationships in prompts. It's the default model and recommended for most users.</p>
+
+  <h2>Your Turn</h2>
+
+  <p>That's everything you need to go from "what is Midjourney?" to creating your first batch of AI images. The whole setup takes about 3 minutes, your first image takes about 1 minute to generate, and from there, you'll probably lose a few hours playing with prompts (fair warning — it's addictive).</p>
+
+  <p>Start with the sample prompts above, tweak them to your taste, and experiment with different parameters. The best way to learn Midjourney isn't reading about it — it's generating 50 images and seeing what each change does.</p>
+
+  <p>Welcome to the fun side of AI. 🎨</p>
+
+  <div class="infini-share-bar">
+    <a class="infini-share-btn infini-share-twitter" href="https://twitter.com/intent/tweet?url=https://aitoolshub.com/articles/how-to-use-midjourney-step-by-step.html&text=Midjourney+for+Beginners:+Your+First+Image+in+10+Minutes" target="_blank" rel="noopener">🐦 Tweet</a>
+    <a class="infini-share-btn infini-share-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://aitoolshub.com/articles/how-to-use-midjourney-step-by-step.html" target="_blank" rel="noopener">💼 LinkedIn</a>
+    <a class="infini-share-btn infini-share-whatsapp" href="https://wa.me/?text=Midjourney+for+Beginners:+Your+First+Image+in+10+Minutes+https://aitoolshub.com/articles/how-to-use-midjourney-step-by-step.html" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a class="infini-share-btn infini-share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://aitoolshub.com/articles/how-to-use-midjourney-step-by-step.html" target="_blank" rel="noopener">📘 Facebook</a>
+  </div>
+
+  <div class="infini-newsletter-cta">
+    <h3>📧 Get AI Art Tips Every Week</h3>
+    <p>Join 5,000+ creators getting prompt inspiration and Midjourney techniques delivered to their inbox.</p>
+    <a href="/#newsletter" class="cta-btn">Subscribe Free →</a>
+  </div>
+
+</article>
+
+<aside class="article-sidebar">
+  <div class="ad-zone ad-sidebar"><span>Advertisement — 300×250</span></div>
+  <div class="sidebar-related">
+    <h3>Related Articles</h3>
+    <ul>
+      <li><a href="/articles/how-to-create-ai-videos-free.html">How to Create AI Videos for Free: 5 Methods</a></li>
+      <li><a href="/articles/how-to-write-blog-posts-with-ai.html">How to Write Blog Posts With AI</a></li>
+      <li><a href="/articles/ai-content-creation-tools.html">AI Content Creation Tools Comparison</a></li>
+    </ul>
+  </div>
+  <div class="ad-zone ad-sidebar" style="margin-top:24px;"><span>Advertisement — 300×600</span></div>
+</aside>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>AI Tools Hub</h4>
+      <p>Your trusted source for AI tool reviews, tutorials, and comparisons.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul><li><a href="/">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy Policy</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul><li><a href="/#categories">Writing Tools</a></li><li><a href="/#categories">Image Generation</a></li><li><a href="/#categories">Video Tools</a></li><li><a href="/#categories">Automation</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2026 AI Tools Hub. All rights reserved.</p></div>
+</footer>
+
+<button class="infini-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+const b=document.querySelector('.infini-back-top');window.addEventListener('scroll',()=>{b.style.display=window.scrollY>400?'block':'none'});
+</script>
+</body>
+</html>
