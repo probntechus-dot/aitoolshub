@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which AI Tool Is Right for You? — Free Quiz | AI Tools Hub</title>
+    <meta name="description" content="Take our free 2-minute quiz to find the perfect AI tool for your business needs. Personalized recommendations based on your goals, budget, and team size.">
+    <link rel="canonical" href="https://aitoolshub-psi.vercel.app/ai-tools-quiz">
+    <meta property="og:title" content="Which AI Tool Is Right for You? — Free Quiz">
+    <meta property="og:description" content="2-minute quiz. Personalized AI tool recommendations.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .quiz-wrap{max-width:640px;margin:40px auto;padding:0 20px}
+        .quiz-hero{text-align:center;margin-bottom:32px}
+        .quiz-hero h1{font-size:32px;margin-bottom:8px}
+        .quiz-progress{background:#e5e7eb;border-radius:8px;height:8px;margin:24px 0}
+        .quiz-progress-fill{height:100%;border-radius:8px;background:linear-gradient(90deg,#667eea,#764ba2);transition:width .3s}
+        .quiz-step{display:none}
+        .quiz-step.active{display:block}
+        .quiz-question{font-size:22px;font-weight:700;margin-bottom:20px}
+        .quiz-options{display:flex;flex-direction:column;gap:10px}
+        .quiz-option{padding:16px 20px;border:2px solid #e5e7eb;border-radius:12px;cursor:pointer;font-size:15px;transition:.2s;background:#fff}
+        .quiz-option:hover{border-color:#667eea;background:#f5f3ff}
+        .quiz-option.selected{border-color:#667eea;background:#ede9fe}
+        .quiz-nav{display:flex;justify-content:space-between;margin-top:24px}
+        .quiz-btn{padding:12px 28px;border-radius:10px;border:none;cursor:pointer;font-size:15px;font-weight:600}
+        .quiz-btn-back{background:#f3f4f6;color:#374151}
+        .quiz-btn-next{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
+        .quiz-btn:disabled{opacity:.4;cursor:not-allowed}
+        .quiz-result{display:none;text-align:center}
+        .quiz-result.show{display:block}
+        .result-title{font-size:28px;font-weight:800;margin-bottom:16px}
+        .rec-cards{display:flex;flex-direction:column;gap:16px;margin:24px 0;text-align:left}
+        .rec-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:20px}
+        .rec-rank{display:inline-block;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;margin-bottom:8px}
+        .rec-name{font-size:20px;font-weight:700;margin-bottom:4px}
+        .rec-why{font-size:14px;color:#555;line-height:1.5;margin-bottom:12px}
+        .rec-link{color:#667eea;font-weight:600;text-decoration:none}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner container">
+            <a href="/" class="site-logo">AI Tools Hub</a>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/tools-directory">Tools</a>
+                <a href="/ai-roi-calculator">ROI Calculator</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="quiz-wrap">
+        <div class="quiz-hero">
+            <h1>🤖 Which AI Tool Is Right for You?</h1>
+            <p style="color:#666;">Answer 5 quick questions. Get personalized recommendations.</p>
+        </div>
+
+        <div class="quiz-progress"><div class="quiz-progress-fill" id="progressFill" style="width:20%"></div></div>
+
+        <div class="quiz-step active" data-step="1">
+            <div class="quiz-question">What's your primary goal with AI?</div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="writing">✍️ Write content faster (blogs, emails, social)</div>
+                <div class="quiz-option" data-value="automation">⚡ Automate repetitive tasks</div>
+                <div class="quiz-option" data-value="design">🎨 Create images, designs, presentations</div>
+                <div class="quiz-option" data-value="code">💻 Write or review code</div>
+                <div class="quiz-option" data-value="marketing">📈 Improve marketing and SEO</div>
+                <div class="quiz-option" data-value="customer">🤝 Better customer service</div>
+            </div>
+        </div>
+
+        <div class="quiz-step" data-step="2">
+            <div class="quiz-question">What's your monthly budget for AI tools?</div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="free">$0 — Free tools only</div>
+                <div class="quiz-option" data-value="low">$1 — $25/month</div>
+                <div class="quiz-option" data-value="mid">$25 — $100/month</div>
+                <div class="quiz-option" data-value="high">$100+/month</div>
+            </div>
+        </div>
+
+        <div class="quiz-step" data-step="3">
+            <div class="quiz-question">How many people will use the tool?</div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="solo">Just me</div>
+                <div class="quiz-option" data-value="small">2-5 people</div>
+                <div class="quiz-option" data-value="medium">6-25 people</div>
+                <div class="quiz-option" data-value="large">25+ people</div>
+            </div>
+        </div>
+
+        <div class="quiz-step" data-step="4">
+            <div class="quiz-question">What's your technical skill level?</div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="beginner">🌱 Beginner — I need simple tools</div>
+                <div class="quiz-option" data-value="intermediate">🌿 Intermediate — I can learn new software</div>
+                <div class="quiz-option" data-value="advanced">🌳 Advanced — I can handle complex tools</div>
+            </div>
+        </div>
+
+        <div class="quiz-step" data-step="5">
+            <div class="quiz-question">What industry are you in?</div>
+            <div class="quiz-options">
+                <div class="quiz-option" data-value="ecommerce">🛍️ E-commerce / Retail</div>
+                <div class="quiz-option" data-value="agency">📣 Marketing / Agency</div>
+                <div class="quiz-option" data-value="saas">💻 SaaS / Tech</div>
+                <div class="quiz-option" data-value="services">🏢 Professional Services</div>
+                <div class="quiz-option" data-value="creative">🎨 Creative / Media</div>
+                <div class="quiz-option" data-value="other">📋 Other</div>
+            </div>
+        </div>
+
+        <div class="quiz-nav">
+            <button class="quiz-btn quiz-btn-back" id="backBtn" disabled>← Back</button>
+            <button class="quiz-btn quiz-btn-next" id="nextBtn" disabled>Next →</button>
+        </div>
+
+        <div class="quiz-result" id="quizResult"></div>
+    </div>
+
+    <footer class="site-footer" style="margin-top:60px;padding:32px 0;text-align:center;">
+        <div class="container"><p style="margin:0;font-size:13px;color:#666;">© 2026 AI Tools Hub</p></div>
+    </footer>
+
+    <script>
+    var answers = {};
+    var current = 1;
+    var total = 5;
+
+    var recommendations = {
+        writing: {
+            free: [{n:"ChatGPT Free",w:"Best free AI writer. Handles blogs, emails, social posts.",l:"/articles/chatgpt-vs-claude"},{n:"Claude Free",w:"Better for long documents and nuanced writing.",l:"/articles/chatgpt-vs-claude"},{n:"Google Gemini",w:"Free with Google integration.",l:"/articles/chatgpt-vs-claude"}],
+            low: [{n:"ChatGPT Plus",w:"$20/mo. GPT-4o for better quality writing.",l:"/articles/chatgpt-vs-claude"},{n:"Grammarly Premium",w:"$12/mo. Fixes grammar, tone, and style.",l:"/articles/ai-content-creation-tools"},{n:"Writesonic",w:"$19/mo. Great for blog content at scale.",l:"/articles/ai-content-creation-tools"}],
+            mid: [{n:"Jasper AI",w:"$49/mo. Best for marketing teams and brand voice.",l:"/articles/ai-content-creation-tools"},{n:"Claude Pro",w:"$20/mo. Best analysis and long-form writing.",l:"/articles/chatgpt-vs-claude"},{n:"Copy.ai",w:"$49/mo. Templates for every content type.",l:"/articles/ai-content-creation-tools"}],
+            high: [{n:"Jasper AI Business",w:"$125/mo. Enterprise content platform.",l:"/articles/ai-content-creation-tools"},{n:"Semrush + AI",w:"$130/mo. SEO + AI content in one platform.",l:"/articles/ai-marketing-tools-beginners"},{n:"Surfer SEO",w:"$89/mo. Optimize content for rankings.",l:"/articles/ai-marketing-tools-beginners"}]
+        },
+        automation: {
+            free: [{n:"Zapier Free",w:"5 free Zaps to start automating.",l:"/articles/zapier-ai-automation-guide"},{n:"Make.com Free",w:"1,000 free operations per month.",l:"/articles/make-vs-zapier"},{n:"n8n",w:"Free self-hosted automation.",l:"/articles/zapier-vs-make-vs-n8n-2026"}],
+            low: [{n:"Zapier Starter",w:"$20/mo. 750 tasks, multi-step Zaps.",l:"/articles/zapier-ai-automation-guide"},{n:"Make.com Core",w:"$9/mo. Visual workflows, more operations.",l:"/articles/make-vs-zapier"},{n:"IFTTT Pro",w:"$3/mo. Simple if-this-then-that automations.",l:"/articles/automate-small-business-ai"}],
+            mid: [{n:"Zapier Professional",w:"$50/mo. Unlimited Zaps, advanced logic.",l:"/articles/zapier-ai-automation-guide"},{n:"Make.com Pro",w:"$16/mo. Priority execution, more data.",l:"/articles/make-vs-zapier"},{n:"Bardeen",w:"$10/mo. Browser-based automation.",l:"/articles/automate-small-business-ai"}],
+            high: [{n:"Zapier Team",w:"$70/mo. Shared workspace, unlimited users.",l:"/articles/zapier-ai-automation-guide"},{n:"n8n Cloud",w:"$20/mo. Powerful self-hosted alternative.",l:"/articles/zapier-vs-make-vs-n8n-2026"},{n:"Microsoft Power Automate",w:"$15/mo. Enterprise-grade automation.",l:"/articles/automate-small-business-ai"}]
+        },
+        design: {
+            free: [{n:"Canva Free",w:"AI design with thousands of templates.",l:"/articles/best-ai-tools-small-business"},{n:"Leonardo.ai Free",w:"150 free AI images per day.",l:"/articles/midjourney-vs-dalle"},{n:"Microsoft Designer",w:"Free AI image generation from Bing.",l:"/articles/midjourney-vs-dalle"}],
+            low: [{n:"Midjourney",w:"$10/mo. Best artistic quality.",l:"/articles/midjourney-vs-dalle"},{n:"Canva Pro",w:"$13/mo. Full design suite with AI.",l:"/articles/best-ai-tools-small-business"},{n:"Leonardo.ai",w:"$12/mo. Professional image generation.",l:"/articles/midjourney-vs-dalle"}],
+            mid: [{n:"Midjourney",w:"$30/mo. Fast mode, more generations.",l:"/articles/midjourney-vs-dalle"},{n:"Adobe Firefly",w:"Part of Creative Cloud. Enterprise-safe AI images.",l:"/articles/midjourney-vs-dalle"},{n:"Beautiful.ai",w:"$12/mo. AI presentations.",l:"/articles/best-ai-tools-small-business"}],
+            high: [{n:"Midjourney Pro",w:"$60/mo. Unlimited generations.",l:"/articles/midjourney-vs-dalle"},{n:"Adobe Creative Cloud",w:"$55/mo. Full suite with Firefly AI.",l:"/articles/midjourney-vs-dalle"},{n:"Figma + AI",w:"$15/mo. UI/UX design with AI features.",l:"/articles/best-ai-tools-small-business"}]
+        },
+        code: {
+            free: [{n:"ChatGPT Free",w:"Good for code generation and debugging.",l:"/articles/ai-tools-for-developers-2026"},{n:"Codeium",w:"Free AI code completion in any IDE.",l:"/articles/ai-tools-for-developers-2026"},{n:"Replit Free",w:"AI coding in the browser.",l:"/articles/ai-tools-for-developers-2026"}],
+            low: [{n:"GitHub Copilot",w:"$10/mo. AI pair programmer by GitHub.",l:"/articles/ai-tools-for-developers-2026"},{n:"ChatGPT Plus",w:"$20/mo. GPT-4o for complex coding tasks.",l:"/articles/ai-tools-for-developers-2026"},{n:"Claude Pro",w:"$20/mo. Best for code review and architecture.",l:"/articles/ai-tools-for-developers-2026"}],
+            mid: [{n:"Cursor Pro",w:"$20/mo. AI-first code editor.",l:"/articles/ai-tools-for-developers-2026"},{n:"GitHub Copilot",w:"$10/mo. Integrates into VS Code and JetBrains.",l:"/articles/ai-tools-for-developers-2026"},{n:"Replit Pro",w:"$25/mo. AI coding + deployment.",l:"/articles/ai-tools-for-developers-2026"}],
+            high: [{n:"Cursor Business",w:"$40/mo. Team features and privacy.",l:"/articles/ai-tools-for-developers-2026"},{n:"GitHub Copilot Enterprise",w:"$39/user/mo. Organization-wide AI coding.",l:"/articles/ai-tools-for-developers-2026"},{n:"Amazon CodeWhisperer",w:"Free for individuals. Enterprise plans available.",l:"/articles/ai-tools-for-developers-2026"}]
+        },
+        marketing: {
+            free: [{n:"ChatGPT Free",w:"Create marketing copy, brainstorm campaigns.",l:"/articles/ai-marketing-tools-beginners"},{n:"Canva Free",w:"Social media graphics with AI.",l:"/articles/ai-marketing-tools-beginners"},{n:"Google Analytics 4",w:"Free website analytics with AI insights.",l:"/articles/ai-marketing-tools-beginners"}],
+            low: [{n:"Beehiiv",w:"Free-$49/mo. Newsletter platform with AI.",l:"/articles/ai-marketing-tools-beginners"},{n:"Buffer",w:"$6/mo. AI social media scheduling.",l:"/articles/ai-marketing-tools-beginners"},{n:"ChatGPT Plus",w:"$20/mo. Advanced marketing copy.",l:"/articles/ai-marketing-tools-beginners"}],
+            mid: [{n:"Surfer SEO",w:"$89/mo. AI content optimization.",l:"/articles/ai-marketing-tools-beginners"},{n:"Jasper AI",w:"$49/mo. Marketing-focused AI writer.",l:"/articles/ai-content-creation-tools"},{n:"Mailchimp",w:"$20/mo. Email marketing with AI.",l:"/articles/ai-marketing-tools-beginners"}],
+            high: [{n:"Semrush",w:"$130/mo. Complete SEO and marketing suite.",l:"/articles/ai-marketing-tools-beginners"},{n:"HubSpot",w:"$50+/mo. Full CRM with AI marketing.",l:"/articles/ai-marketing-tools-beginners"},{n:"Ahrefs",w:"$99/mo. SEO and backlink analysis.",l:"/articles/ai-marketing-tools-beginners"}]
+        },
+        customer: {
+            free: [{n:"Tidio Free",w:"Free chatbot for your website.",l:"/articles/ai-customer-service-tools"},{n:"Tawk.to",w:"Free live chat with AI.",l:"/articles/ai-customer-service-tools"},{n:"ChatGPT Free",w:"Use for customer email templates.",l:"/articles/ai-customer-service-tools"}],
+            low: [{n:"Tidio",w:"$29/mo. AI chatbot with automations.",l:"/articles/ai-customer-service-tools"},{n:"Crisp",w:"$25/mo. Live chat + chatbot.",l:"/articles/ai-customer-service-tools"},{n:"Freshdesk",w:"$15/mo. Help desk with AI.",l:"/articles/ai-customer-service-tools"}],
+            mid: [{n:"Intercom",w:"$74/mo. Premium AI customer platform.",l:"/articles/ai-customer-service-tools"},{n:"Zendesk AI",w:"$55/mo. Enterprise help desk.",l:"/articles/ai-customer-service-tools"},{n:"Drift",w:"Custom pricing. Conversational AI.",l:"/articles/ai-customer-service-tools"}],
+            high: [{n:"Intercom",w:"$74+/mo. Best-in-class AI support.",l:"/articles/ai-customer-service-tools"},{n:"Salesforce Service Cloud",w:"$150/mo. Enterprise AI service.",l:"/articles/ai-customer-service-tools"},{n:"Zendesk Suite",w:"$115/mo. Full AI support platform.",l:"/articles/ai-customer-service-tools"}]
+        }
+    };
+
+    function selectOption(el) {
+        el.parentElement.querySelectorAll('.quiz-option').forEach(function(o){o.classList.remove('selected')});
+        el.classList.add('selected');
+        answers[current] = el.dataset.value;
+        document.getElementById('nextBtn').disabled = false;
+    }
+
+    document.querySelectorAll('.quiz-option').forEach(function(o){
+        o.addEventListener('click', function(){ selectOption(this); });
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function(){
+        if (!answers[current]) return;
+        if (current < total) {
+            document.querySelector('.quiz-step[data-step="'+current+'"]').classList.remove('active');
+            current++;
+            document.querySelector('.quiz-step[data-step="'+current+'"]').classList.add('active');
+            document.getElementById('progressFill').style.width = (current/total*100)+'%';
+            document.getElementById('backBtn').disabled = false;
+            document.getElementById('nextBtn').disabled = !answers[current];
+            if (current === total) document.getElementById('nextBtn').textContent = 'See Results →';
+        } else {
+            showResults();
+        }
+    });
+
+    document.getElementById('backBtn').addEventListener('click', function(){
+        if (current > 1) {
+            document.querySelector('.quiz-step[data-step="'+current+'"]').classList.remove('active');
+            current--;
+            document.querySelector('.quiz-step[data-step="'+current+'"]').classList.add('active');
+            document.getElementById('progressFill').style.width = (current/total*100)+'%';
+            document.getElementById('backBtn').disabled = current===1;
+            document.getElementById('nextBtn').textContent = 'Next →';
+            document.getElementById('nextBtn').disabled = false;
+        }
+    });
+
+    function showResults() {
+        var goal = answers[1] || 'writing';
+        var budget = answers[2] || 'free';
+        var recs = (recommendations[goal] && recommendations[goal][budget]) || recommendations.writing.free;
+
+        var html = '<div class="result-title">🎯 Your Perfect AI Stack</div>';
+        html += '<p style="color:#666;margin-bottom:24px;">Based on your answers, here are our top 3 recommendations:</p>';
+        html += '<div class="rec-cards">';
+        recs.forEach(function(r, i) {
+            html += '<div class="rec-card">';
+            html += '<span class="rec-rank">#' + (i+1) + ' Pick</span>';
+            html += '<div class="rec-name">' + r.n + '</div>';
+            html += '<div class="rec-why">' + r.w + '</div>';
+            html += '<a class="rec-link" href="' + r.l + '">Read Full Review →</a>';
+            html += '</div>';
+        });
+        html += '</div>';
+        html += '<div style="margin-top:24px"><a href="/tools-directory" style="color:#667eea;font-weight:600;text-decoration:none;">Browse All 200+ Tools →</a></div>';
+
+        document.querySelectorAll('.quiz-step').forEach(function(s){s.classList.remove('active')});
+        document.querySelector('.quiz-nav').style.display = 'none';
+        document.querySelector('.quiz-progress').style.display = 'none';
+        var result = document.getElementById('quizResult');
+        result.innerHTML = html;
+        result.classList.add('show');
+    }
+    </script>
+</body>
+</html>
