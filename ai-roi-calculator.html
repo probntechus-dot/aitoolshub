@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ROI Calculator — How Much Can AI Save Your Business? | AI Tools Hub</title>
+    <meta name="description" content="Calculate the ROI of implementing AI tools in your business. Free calculator shows potential time and cost savings from AI automation.">
+    <meta name="keywords" content="ai roi calculator, ai cost savings, ai business calculator, ai automation roi">
+    <link rel="canonical" href="https://aitoolshub-psi.vercel.app/ai-roi-calculator">
+    <meta property="og:title" content="AI ROI Calculator — How Much Can AI Save Your Business?">
+    <meta property="og:description" content="Free calculator shows potential time and cost savings from AI automation.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80">
+    <meta property="og:url" content="https://aitoolshub-psi.vercel.app/ai-roi-calculator">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .calc-wrap{max-width:720px;margin:40px auto;padding:0 20px}
+        .calc-hero{text-align:center;margin-bottom:40px}
+        .calc-hero h1{font-size:36px;margin-bottom:12px}
+        .calc-hero p{color:#666;font-size:18px}
+        .calc-form{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:32px;box-shadow:0 8px 32px rgba(0,0,0,.06)}
+        .calc-group{margin-bottom:24px}
+        .calc-label{display:block;font-weight:600;margin-bottom:8px;font-size:15px}
+        .calc-hint{font-size:13px;color:#888;margin-bottom:6px}
+        .calc-input{width:100%;padding:12px 16px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;transition:.2s}
+        .calc-input:focus{border-color:#667eea;outline:none;box-shadow:0 0 0 3px rgba(102,126,234,.15)}
+        .calc-select{width:100%;padding:12px 16px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;background:#fff}
+        .calc-btn{width:100%;padding:16px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;border-radius:12px;font-size:17px;font-weight:700;cursor:pointer;transition:.2s}
+        .calc-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(102,126,234,.3)}
+        .calc-results{display:none;margin-top:32px;background:#f0fdf4;border:1px solid #86efac;border-radius:16px;padding:32px}
+        .calc-results.show{display:block}
+        .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+        .result-card{background:#fff;border-radius:12px;padding:20px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+        .result-value{font-size:36px;font-weight:800;color:#059669}
+        .result-label{font-size:13px;color:#666;margin-top:4px}
+        .result-breakdown{margin-top:20px}
+        .result-breakdown table{width:100%;border-collapse:collapse}
+        .result-breakdown td{padding:8px 0;border-bottom:1px solid #e5e7eb;font-size:14px}
+        .result-breakdown td:last-child{text-align:right;font-weight:600}
+        .cta-box{background:linear-gradient(135deg,#667eea,#764ba2);border-radius:12px;padding:24px;text-align:center;color:#fff;margin-top:24px}
+        .cta-box a{display:inline-block;padding:12px 28px;background:#fff;color:#764ba2;border-radius:10px;font-weight:700;text-decoration:none;margin-top:12px}
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "AI ROI Calculator",
+        "url": "https://aitoolshub-psi.vercel.app/ai-roi-calculator",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner container">
+            <a href="/" class="site-logo">AI Tools Hub</a>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/resources">Resources</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="calc-wrap">
+        <div class="calc-hero">
+            <h1>🧮 AI ROI Calculator</h1>
+            <p>Find out how much time and money AI tools can save your business</p>
+        </div>
+
+        <div class="calc-form">
+            <div class="calc-group">
+                <label class="calc-label">Number of employees</label>
+                <div class="calc-hint">How many people work in your business?</div>
+                <input type="number" class="calc-input" id="employees" value="5" min="1" max="10000">
+            </div>
+
+            <div class="calc-group">
+                <label class="calc-label">Average hourly cost per employee ($)</label>
+                <div class="calc-hint">Include salary, benefits, and overhead</div>
+                <input type="number" class="calc-input" id="hourlyRate" value="35" min="5" max="500">
+            </div>
+
+            <div class="calc-group">
+                <label class="calc-label">Hours per week on repetitive tasks (per person)</label>
+                <div class="calc-hint">Email, data entry, scheduling, reporting, etc.</div>
+                <input type="number" class="calc-input" id="repetitiveHours" value="10" min="1" max="40">
+            </div>
+
+            <div class="calc-group">
+                <label class="calc-label">Industry</label>
+                <select class="calc-select" id="industry">
+                    <option value="general">General Business</option>
+                    <option value="marketing">Marketing / Agency</option>
+                    <option value="legal">Legal</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="finance">Finance / Accounting</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="realestate">Real Estate</option>
+                    <option value="education">Education</option>
+                    <option value="tech">Technology</option>
+                </select>
+            </div>
+
+            <div class="calc-group">
+                <label class="calc-label">Estimated AI tool cost per month ($)</label>
+                <div class="calc-hint">Most small businesses spend $50-$300/month</div>
+                <input type="number" class="calc-input" id="aiCost" value="150" min="0" max="50000">
+            </div>
+
+            <button class="calc-btn" onclick="calculate()">Calculate My AI ROI →</button>
+        </div>
+
+        <div class="calc-results" id="results">
+            <h2 style="text-align:center;margin-bottom:4px;">Your AI ROI Estimate</h2>
+            <p style="text-align:center;color:#666;font-size:14px;">Based on industry benchmarks and your inputs</p>
+
+            <div class="result-grid">
+                <div class="result-card">
+                    <div class="result-value" id="hoursSaved">—</div>
+                    <div class="result-label">Hours saved per month</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value" id="moneySaved">—</div>
+                    <div class="result-label">Dollars saved per month</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value" id="roi">—</div>
+                    <div class="result-label">ROI percentage</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-value" id="annualSavings">—</div>
+                    <div class="result-label">Annual savings</div>
+                </div>
+            </div>
+
+            <div class="result-breakdown">
+                <h3>Breakdown</h3>
+                <table>
+                    <tr><td>Monthly repetitive task cost (before AI)</td><td id="beforeCost">—</td></tr>
+                    <tr><td>AI automation efficiency</td><td id="efficiency">—</td></tr>
+                    <tr><td>Monthly AI tool investment</td><td id="aiInvestment">—</td></tr>
+                    <tr><td>Net monthly savings</td><td id="netSavings" style="color:#059669">—</td></tr>
+                    <tr><td>Payback period</td><td id="payback">—</td></tr>
+                </table>
+            </div>
+
+            <div class="cta-box">
+                <h3>Ready to start saving?</h3>
+                <p>See which AI tools deliver the best ROI for your business</p>
+                <a href="/articles/best-ai-tools-small-business">View Our Top AI Tools →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer" style="margin-top:60px;padding:32px 0;text-align:center;">
+        <div class="container">
+            <p style="margin:0;font-size:13px;color:#666;">© 2026 AI Tools Hub. Free tools for smart business owners.</p>
+        </div>
+    </footer>
+
+    <script>
+    var industryEfficiency = {
+        general: 0.35, marketing: 0.45, legal: 0.30, healthcare: 0.25,
+        finance: 0.40, ecommerce: 0.50, realestate: 0.35, education: 0.30, tech: 0.55
+    };
+
+    function calculate() {
+        var emp = parseInt(document.getElementById('employees').value) || 5;
+        var rate = parseFloat(document.getElementById('hourlyRate').value) || 35;
+        var hours = parseInt(document.getElementById('repetitiveHours').value) || 10;
+        var industry = document.getElementById('industry').value;
+        var aiCost = parseFloat(document.getElementById('aiCost').value) || 150;
+
+        var eff = industryEfficiency[industry] || 0.35;
+        var monthlyRepHours = emp * hours * 4.33;
+        var monthlyRepCost = monthlyRepHours * rate;
+        var savedHours = Math.round(monthlyRepHours * eff);
+        var savedMoney = Math.round(savedHours * rate);
+        var netSaved = savedMoney - aiCost;
+        var roi = aiCost > 0 ? Math.round((netSaved / aiCost) * 100) : 0;
+        var annual = netSaved * 12;
+        var paybackDays = netSaved > 0 ? Math.max(1, Math.round(aiCost / (netSaved / 30))) : 999;
+
+        document.getElementById('hoursSaved').textContent = savedHours;
+        document.getElementById('moneySaved').textContent = '$' + savedMoney.toLocaleString();
+        document.getElementById('roi').textContent = roi + '%';
+        document.getElementById('annualSavings').textContent = '$' + annual.toLocaleString();
+        document.getElementById('beforeCost').textContent = '$' + Math.round(monthlyRepCost).toLocaleString();
+        document.getElementById('efficiency').textContent = Math.round(eff * 100) + '%';
+        document.getElementById('aiInvestment').textContent = '$' + aiCost.toLocaleString();
+        document.getElementById('netSavings').textContent = '$' + netSaved.toLocaleString();
+        document.getElementById('payback').textContent = paybackDays + ' days';
+
+        document.getElementById('results').classList.add('show');
+        document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    </script>
+</body>
+</html>

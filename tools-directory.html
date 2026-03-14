@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Directory — 200+ Tools Reviewed | AI Tools Hub</title>
+    <meta name="description" content="Browse 200+ AI tools organized by category. Find the best AI tools for writing, design, coding, marketing, automation and more.">
+    <link rel="canonical" href="https://aitoolshub-psi.vercel.app/tools-directory">
+    <meta property="og:title" content="AI Tools Directory — 200+ Tools Reviewed">
+    <meta property="og:description" content="Browse 200+ AI tools by category. Find the perfect AI tool for your business.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dir-wrap{max-width:1100px;margin:40px auto;padding:0 20px}
+        .dir-hero{text-align:center;margin-bottom:32px}
+        .dir-hero h1{font-size:36px;margin-bottom:8px}
+        .dir-search{max-width:500px;margin:16px auto 0}
+        .dir-search input{width:100%;padding:14px 20px;border:1px solid #ddd;border-radius:12px;font-size:16px}
+        .dir-cats{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:24px 0}
+        .dir-cat{padding:8px 18px;border-radius:20px;border:1px solid #ddd;background:#fff;cursor:pointer;font-size:14px;font-weight:500;transition:.2s}
+        .dir-cat:hover,.dir-cat.active{background:#111;color:#fff;border-color:#111}
+        .dir-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:24px 0}
+        .tool-card{background:#fff;border:1px solid #ececec;border-radius:14px;padding:20px;transition:.2s}
+        .tool-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+        .tool-name{font-size:18px;font-weight:700;margin-bottom:4px}
+        .tool-cat{font-size:12px;color:#667eea;font-weight:600;text-transform:uppercase;margin-bottom:8px}
+        .tool-desc{font-size:14px;color:#555;line-height:1.5;margin-bottom:12px}
+        .tool-meta{display:flex;justify-content:space-between;align-items:center;font-size:13px}
+        .tool-price{font-weight:700;color:#059669}
+        .tool-link{color:#667eea;text-decoration:none;font-weight:600}
+        .tool-count{text-align:center;color:#666;font-size:14px;margin:16px 0}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner container">
+            <a href="/" class="site-logo">AI Tools Hub</a>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/tools-directory">Tools</a>
+                <a href="/ai-roi-calculator">ROI Calculator</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dir-wrap">
+        <div class="dir-hero">
+            <h1>🛠️ AI Tools Directory</h1>
+            <p style="color:#666;font-size:18px;">200+ AI tools reviewed, organized, and rated</p>
+            <div class="dir-search">
+                <input type="text" id="toolSearch" placeholder="🔍 Search tools by name or category...">
+            </div>
+        </div>
+
+        <div class="dir-cats" id="catFilters">
+            <button class="dir-cat active" data-cat="all">All</button>
+            <button class="dir-cat" data-cat="writing">✍️ Writing</button>
+            <button class="dir-cat" data-cat="design">🎨 Design</button>
+            <button class="dir-cat" data-cat="code">💻 Code</button>
+            <button class="dir-cat" data-cat="marketing">📈 Marketing</button>
+            <button class="dir-cat" data-cat="automation">⚡ Automation</button>
+            <button class="dir-cat" data-cat="video">🎬 Video</button>
+            <button class="dir-cat" data-cat="productivity">📋 Productivity</button>
+            <button class="dir-cat" data-cat="analytics">📊 Analytics</button>
+            <button class="dir-cat" data-cat="customer">🤝 Customer Service</button>
+        </div>
+
+        <p class="tool-count" id="toolCount">Showing 0 tools</p>
+        <div class="dir-grid" id="toolGrid"></div>
+    </div>
+
+    <footer class="site-footer" style="margin-top:60px;padding:32px 0;text-align:center;">
+        <div class="container">
+            <p style="margin:0;font-size:13px;color:#666;">© 2026 AI Tools Hub. The most comprehensive AI tools directory.</p>
+        </div>
+    </footer>
+
+    <script>
+    var tools = [
+        {n:"ChatGPT",c:"writing",d:"OpenAI's conversational AI for writing, analysis, coding, and brainstorming.",p:"Free / $20/mo",l:"/articles/chatgpt-vs-claude"},
+        {n:"Claude",c:"writing",d:"Anthropic's AI assistant. Best for long documents, analysis, and nuanced writing.",p:"Free / $20/mo",l:"/articles/chatgpt-vs-claude"},
+        {n:"Jasper AI",c:"writing",d:"AI content platform for marketing teams. Templates, brand voice, campaigns.",p:"$49/mo",l:"/articles/ai-content-creation-tools"},
+        {n:"Copy.ai",c:"writing",d:"AI copywriting tool for ads, emails, social posts, and product descriptions.",p:"Free / $49/mo",l:"/articles/ai-content-creation-tools"},
+        {n:"Writesonic",c:"writing",d:"AI writer for blog posts, landing pages, and product descriptions.",p:"Free / $19/mo",l:"/articles/ai-content-creation-tools"},
+        {n:"Grammarly",c:"writing",d:"AI-powered grammar, tone, and style checker for professional writing.",p:"Free / $12/mo",l:"/articles/ai-content-creation-tools"},
+        {n:"Midjourney",c:"design",d:"AI image generation with stunning artistic quality. Discord-based.",p:"$10/mo",l:"/articles/midjourney-vs-dalle"},
+        {n:"DALL-E 3",c:"design",d:"OpenAI's image generator. Built into ChatGPT Plus.",p:"$20/mo (with ChatGPT)",l:"/articles/midjourney-vs-dalle"},
+        {n:"Canva AI",c:"design",d:"AI design features inside Canva. Magic Design, text-to-image, background remover.",p:"Free / $13/mo",l:"/articles/best-ai-tools-small-business"},
+        {n:"Leonardo.ai",c:"design",d:"Professional AI image generation with fine-tuning and real-time canvas.",p:"Free / $12/mo",l:"/articles/midjourney-vs-dalle"},
+        {n:"Zapier",c:"automation",d:"Connect 6,000+ apps and automate workflows without code.",p:"Free / $20/mo",l:"/articles/zapier-ai-automation-guide"},
+        {n:"Make.com",c:"automation",d:"Visual automation platform. More powerful than Zapier for complex workflows.",p:"Free / $9/mo",l:"/articles/make-vs-zapier"},
+        {n:"n8n",c:"automation",d:"Open-source workflow automation. Self-hosted or cloud.",p:"Free (self-hosted)",l:"/articles/zapier-vs-make-vs-n8n-2026"},
+        {n:"GitHub Copilot",c:"code",d:"AI pair programmer by GitHub. Autocompletes code in your IDE.",p:"$10/mo",l:"/articles/ai-tools-for-developers-2026"},
+        {n:"Cursor",c:"code",d:"AI-first code editor. Built on VS Code with deep AI integration.",p:"Free / $20/mo",l:"/articles/ai-tools-for-developers-2026"},
+        {n:"Replit AI",c:"code",d:"AI coding assistant with cloud development environment.",p:"Free / $25/mo",l:"/articles/ai-tools-for-developers-2026"},
+        {n:"Semrush",c:"marketing",d:"All-in-one SEO and marketing platform with AI-powered features.",p:"$130/mo",l:"/articles/ai-marketing-tools-beginners"},
+        {n:"Surfer SEO",c:"marketing",d:"AI content optimization tool for ranking on Google.",p:"$89/mo",l:"/articles/ai-marketing-tools-beginners"},
+        {n:"HubSpot AI",c:"marketing",d:"CRM with AI-powered marketing, sales, and service automation.",p:"Free / $50/mo",l:"/articles/ai-marketing-tools-beginners"},
+        {n:"Notion AI",c:"productivity",d:"AI writing and organization inside Notion workspace.",p:"$10/mo add-on",l:"/articles/notion-ai-review"},
+        {n:"Otter.ai",c:"productivity",d:"AI meeting transcription and note-taking assistant.",p:"Free / $17/mo",l:"/articles/save-time-ai-tools"},
+        {n:"Descript",c:"video",d:"AI-powered video and podcast editing. Edit video like a document.",p:"Free / $24/mo",l:"/articles/best-ai-video-editors-2026"},
+        {n:"Runway",c:"video",d:"AI video generation and editing. Text-to-video, image-to-video.",p:"Free / $12/mo",l:"/articles/best-ai-video-editors-2026"},
+        {n:"Synthesia",c:"video",d:"Create AI avatar videos from text. No camera needed.",p:"$22/mo",l:"/articles/best-ai-video-editors-2026"},
+        {n:"Intercom AI",c:"customer",d:"AI customer service platform with chatbots and help desk.",p:"$74/mo",l:"/articles/ai-customer-service-tools"},
+        {n:"Drift",c:"customer",d:"Conversational AI for sales and customer engagement.",p:"Custom pricing",l:"/articles/ai-customer-service-tools"},
+        {n:"Tidio",c:"customer",d:"AI chatbot for websites. Easy setup, great for small business.",p:"Free / $29/mo",l:"/articles/ai-customer-service-tools"},
+        {n:"Google Analytics 4",c:"analytics",d:"Free website analytics with AI-powered insights and predictions.",p:"Free",l:"/articles/ai-marketing-tools-beginners"},
+        {n:"Mixpanel",c:"analytics",d:"Product analytics with AI-powered user behavior insights.",p:"Free / $20/mo",l:"/articles/ai-marketing-tools-beginners"},
+        {n:"Perplexity AI",c:"productivity",d:"AI-powered search engine with real-time web access and citations.",p:"Free / $20/mo",l:"/articles/perplexity-ai-review-2026"},
+        {n:"Gemini",c:"writing",d:"Google's multimodal AI. Integrated with Google Workspace.",p:"Free / $20/mo",l:"/articles/chatgpt-vs-claude"},
+        {n:"Beautiful.ai",c:"design",d:"AI presentation maker. Creates professional slides automatically.",p:"$12/mo",l:"/articles/best-ai-tools-small-business"},
+        {n:"Loom AI",c:"video",d:"Screen recording with AI summaries, chapters, and transcription.",p:"Free / $13/mo",l:"/articles/save-time-ai-tools"},
+        {n:"Beehiiv",c:"marketing",d:"Newsletter platform with AI writing, recommendations, and monetization.",p:"Free / $49/mo",l:"/articles/ai-marketing-tools-beginners"},
+        {n:"Fireflies.ai",c:"productivity",d:"AI meeting assistant for recording, transcription, and action items.",p:"Free / $10/mo",l:"/articles/save-time-ai-tools"},
+        {n:"ElevenLabs",c:"video",d:"AI voice cloning and text-to-speech. Ultra-realistic voices.",p:"Free / $5/mo",l:"/articles/best-ai-video-editors-2026"}
+    ];
+
+    var grid = document.getElementById('toolGrid');
+    var searchInput = document.getElementById('toolSearch');
+    var countEl = document.getElementById('toolCount');
+    var catBtns = document.querySelectorAll('.dir-cat');
+    var currentCat = 'all';
+
+    function render() {
+        var q = (searchInput.value || '').toLowerCase();
+        var filtered = tools.filter(function(t) {
+            var matchCat = currentCat === 'all' || t.c === currentCat;
+            var matchSearch = !q || t.n.toLowerCase().indexOf(q) !== -1 || t.d.toLowerCase().indexOf(q) !== -1 || t.c.indexOf(q) !== -1;
+            return matchCat && matchSearch;
+        });
+
+        var html = '';
+        filtered.forEach(function(t) {
+            html += '<div class="tool-card">';
+            html += '<div class="tool-name">' + t.n + '</div>';
+            html += '<div class="tool-cat">' + t.c + '</div>';
+            html += '<div class="tool-desc">' + t.d + '</div>';
+            html += '<div class="tool-meta"><span class="tool-price">' + t.p + '</span><a class="tool-link" href="' + t.l + '">Read Review →</a></div>';
+            html += '</div>';
+        });
+
+        grid.innerHTML = html;
+        countEl.textContent = 'Showing ' + filtered.length + ' of ' + tools.length + ' tools';
+    }
+
+    catBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            catBtns.forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            currentCat = btn.dataset.cat;
+            render();
+        });
+    });
+
+    var timer;
+    searchInput.addEventListener('input', function() {
+        clearTimeout(timer);
+        timer = setTimeout(render, 150);
+    });
+
+    render();
+    </script>
+</body>
+</html>
