@@ -1,8 +1,21 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /search?
-Disallow: /*.json$
+Disallow: /api/
 
-Sitemap: https://aitoolshub.com/sitemap.xml
+Sitemap: https://aitoolshub-psi.vercel.app/sitemap.xml
+
+# AI crawlers welcome (GEO optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
