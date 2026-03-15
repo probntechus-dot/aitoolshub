@@ -967,7 +967,7 @@ img {
   color: var(--text-muted);
 }
 
-.meta-sep { color: var(--border
+.meta-sep { color: var(--border); }
 
 /* ============================================
    DESIGN ELEVATION — Premium White Theme
