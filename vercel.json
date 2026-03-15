@@ -1,16 +1,10 @@
 {
   "version": 2,
   "name": "aitoolshub",
-
   "redirects": [
     {
       "source": "/index.html",
       "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/privacy",
-      "destination": "/privacy.html",
       "permanent": true
     },
     {
@@ -209,7 +203,6 @@
       "permanent": true
     }
   ],
-
   "headers": [
     {
       "source": "/(.*)",
@@ -312,7 +305,6 @@
       ]
     }
   ],
-
   "cleanUrls": true,
   "trailingSlash": false
 }
