@@ -80,7 +80,25 @@
 
   // === STATE ===
   var rawData = typeof ARTICLES_DATA !== 'undefined' ? ARTICLES_DATA : [];
+  console.log('[ARTICLES DATA CHECK]', 'typeof ARTICLES_DATA:', typeof ARTICLES_DATA, 'length:', rawData.length);
   var allArticles = normalizeArticles(rawData);
+  console.log('[NORMALIZED ARTICLES]', 'allArticles length:', allArticles.length);
+  if (allArticles.length === 0 && rawData.length > 0) {
+    console.error('[ERROR]', 'normalizeArticles returned empty array!');
+    // Emergency fallback - use raw data directly
+    allArticles = rawData.map(function(r, idx) {
+      return {
+        t: r.title || '',
+        c: r.category || 'AI Tools',
+        d: r.description || '',
+        f: r.url || ('/articles/' + (r.slug || '') + '.html'),
+        dt: r.date || '2026-03-01',
+        i: r.image || 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80',
+        slug: r.slug || ''
+      };
+    });
+    console.log('[FALLBACK]', 'Using emergency fallback - allArticles length:', allArticles.length);
+  }
   var filtered = allArticles.slice();
   var currentPage = 1;
   var activeCategory = 'all';
