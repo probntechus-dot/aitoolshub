@@ -253,10 +253,13 @@
     var total = filtered.length;
     var showing = Math.min(currentPage * PER_PAGE, total);
 
+    console.log('[RENDER]', 'total:', total, 'currentPage:', currentPage, 'PER_PAGE:', PER_PAGE, 'showing:', showing);
+
     totalCount.textContent = total;
     showingCount.textContent = showing;
 
     if (total === 0) {
+      console.log('[RENDER]', 'Total is 0, showing no results');
       grid.innerHTML = '';
       noResults.style.display = 'block';
       loadMoreWrap.style.display = 'none';
@@ -267,9 +270,21 @@
     loadMoreWrap.style.display = 'block';
 
     var html = '';
-    for (var i = 0; i < showing; i++) {
-      html += renderCard(filtered[i], i >= (currentPage - 1) * PER_PAGE ? i - (currentPage - 1) * PER_PAGE : 0);
+    var startIdx = (currentPage - 1) * PER_PAGE;
+    var endIdx = Math.min(startIdx + PER_PAGE, total);
+    console.log('[RENDER]', 'Building cards from index', startIdx, 'to', endIdx);
+    
+    for (var i = startIdx; i < endIdx; i++) {
+      if (!filtered[i]) {
+        console.warn('[RENDER]', 'filtered[' + i + '] is undefined!');
+        continue;
+      }
+      var card = renderCard(filtered[i], i - startIdx);
+      console.log('[RENDER]', 'Card ' + i + ':', filtered[i].t.substring(0, 30) + '...');
+      html += card;
     }
+    
+    console.log('[RENDER]', 'Final HTML length:', html.length);
     grid.innerHTML = html;
 
     // Progress bar
