@@ -1,4 +1,4 @@
-const ARTICLES_DATA = [
+var ARTICLES_DATA = [
   {
     "slug": "ai-3d-printing-manufacturing-2026",
     "title": "AI 3D Printing and Additive Manufacturing Tools",
