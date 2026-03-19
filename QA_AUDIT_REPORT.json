@@ -1,0 +1,1826 @@
+{
+  "timestamp": "2026-03-19T23:48:59.818Z",
+  "summary": {
+    "total": 100,
+    "existing": 70,
+    "missing": 30,
+    "excellent": 0,
+    "good": 0,
+    "needsFixes": 70
+  },
+  "metrics": {
+    "avgWordCount": 2268,
+    "avgImages": 4.8,
+    "avgFAQs": 0.1
+  },
+  "articles": [
+    {
+      "slug": "chatgpt-vs-claude",
+      "exists": true,
+      "wordCount": 2113,
+      "imageCount": 5,
+      "comparisonBoxes": 2,
+      "faqCount": 0,
+      "internalLinks": 5,
+      "modifiedDate": "2026-03-20",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2113 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "best-ai-meeting-assistants",
+      "exists": true,
+      "wordCount": 3464,
+      "imageCount": 4,
+      "comparisonBoxes": 3,
+      "faqCount": 0,
+      "internalLinks": 13,
+      "modifiedDate": "2026-03-20",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-side-hustles-that-actually-work",
+      "exists": true,
+      "wordCount": 2023,
+      "imageCount": 2,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 3,
+      "modifiedDate": "2026-03-20",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Not enough images: 2 (min 4)",
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2023 (target 2500-3500)",
+        "Could use more images: 2 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "small-business-ai-adoption-guide",
+      "exists": true,
+      "wordCount": 2398,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 4,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2398 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-tools-for-small-business-owners",
+      "exists": true,
+      "wordCount": 2716,
+      "imageCount": 4,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "chatgpt-for-excel-formulas-guide",
+      "exists": true,
+      "wordCount": 2603,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 9,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "how-to-use-ai-for-job-search",
+      "exists": true,
+      "wordCount": 2289,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 9,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2289 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-content-detection-how-it-works",
+      "exists": true,
+      "wordCount": 2583,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-content-creation-tools",
+      "exists": true,
+      "wordCount": 2097,
+      "imageCount": 12,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 35,
+      "modifiedDate": "2026-02-28",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
+      ],
+      "warnings": [
+        "Word count below ideal: 2097 (target 2500-3500)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-02-28"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-writing-tools-2026",
+      "exists": true,
+      "wordCount": 826,
+      "imageCount": 3,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 7,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Word count too low: 826 (min 1000)",
+        "Not enough images: 3 (min 4)",
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 826 (target 2500-3500)",
+        "Could use more images: 3 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-video-editing-tools-free",
+      "exists": true,
+      "wordCount": 2635,
+      "imageCount": 7,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 13,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
+      ],
+      "warnings": [
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-tools-for-social-media-management",
+      "exists": true,
+      "wordCount": 2827,
+      "imageCount": 6,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 3,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-freelance-services-high-demand",
+      "exists": true,
+      "wordCount": 2550,
+      "imageCount": 4,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-email-newsletter-tools-2026",
+      "exists": true,
+      "wordCount": 2034,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": "2026-03-10",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2034 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-10"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-seo-content-brief-generators-2026",
+      "exists": true,
+      "wordCount": 2168,
+      "imageCount": 6,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2168 (target 2500-3500)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-customer-service-tools",
+      "exists": true,
+      "wordCount": 1923,
+      "imageCount": 11,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 31,
+      "modifiedDate": "2026-02-28",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
+      ],
+      "warnings": [
+        "Word count below ideal: 1923 (target 2500-3500)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-02-28"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-etsy-shop-business-guide",
+      "exists": true,
+      "wordCount": 2575,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 4,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-tools-for-dropshipping-business",
+      "exists": true,
+      "wordCount": 2800,
+      "imageCount": 10,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 23,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
+      ],
+      "warnings": [
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-business-plan-generator-2026",
+      "exists": true,
+      "wordCount": 523,
+      "imageCount": 0,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 2,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Word count too low: 523 (min 1000)",
+        "Not enough images: 0 (min 4)",
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 523 (target 2500-3500)",
+        "Could use more images: 0 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 2 (target 3-5)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-academic-research-writing-2026",
+      "exists": true,
+      "wordCount": 2230,
+      "imageCount": 6,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-10",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2230 (target 2500-3500)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-10"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-recruiting-talent-acquisition-2026",
+      "exists": true,
+      "wordCount": 2778,
+      "imageCount": 4,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 5,
+      "modifiedDate": "2026-03-20",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-knowledge-base-growing-teams",
+      "exists": true,
+      "wordCount": 2745,
+      "imageCount": 4,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 5,
+      "modifiedDate": "2026-03-20",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "slack-ai-vs-discord-for-business",
+      "exists": true,
+      "wordCount": 2636,
+      "imageCount": 4,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 5,
+      "modifiedDate": "2026-03-20",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-real-estate-photography-2026",
+      "exists": true,
+      "wordCount": 1372,
+      "imageCount": 0,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 2,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Not enough images: 0 (min 4)",
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 1372 (target 2500-3500)",
+        "Could use more images: 0 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 2 (target 3-5)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-speech-writing-public-speakers",
+      "exists": true,
+      "wordCount": 2121,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": "2026-03-08",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2121 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-08"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-tools-mistakes",
+      "exists": true,
+      "wordCount": 2640,
+      "imageCount": 3,
+      "comparisonBoxes": 0,
+      "faqCount": 5,
+      "internalLinks": 27,
+      "modifiedDate": "2026-02-28",
+      "hasMetaDescription": true,
+      "hasSchema": true,
+      "issues": [
+        "Not enough images: 3 (min 4)"
+      ],
+      "warnings": [
+        "Could use more images: 3 (ideal 6+)",
+        "No comparison boxes found",
+        "Modified date not current: 2026-02-28"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "automate-small-business-ai",
+      "exists": true,
+      "wordCount": 2643,
+      "imageCount": 12,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 31,
+      "modifiedDate": "2026-02-28",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
+      ],
+      "warnings": [
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-02-28"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-sales-forecasting-revenue-2026",
+      "exists": true,
+      "wordCount": 2363,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12T11:00:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2363 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12T11:00:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-lead-scoring-sales-2026",
+      "exists": true,
+      "wordCount": 2398,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-10",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2398 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-10"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-local-seo-small-business-2026",
+      "exists": true,
+      "wordCount": 2543,
+      "imageCount": 4,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-16",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-16"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-content-calendar-planning-2026",
+      "exists": true,
+      "wordCount": 2151,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": "2026-03-13",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2151 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-13"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-customer-journey-mapping-2026",
+      "exists": true,
+      "wordCount": 2575,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-customer-feedback-analysis-2026",
+      "exists": true,
+      "wordCount": 2142,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2142 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-time-tracking-freelancers-remote",
+      "exists": true,
+      "wordCount": 2502,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-ghostwriting-tools-authors-2026",
+      "exists": true,
+      "wordCount": 2388,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-05",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2388 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-05"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-scriptwriting-film-tv-2026",
+      "exists": true,
+      "wordCount": 2594,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-video-seo-youtube-ranking-2026",
+      "exists": true,
+      "wordCount": 2200,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2200 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-short-form-video-tiktok-2026",
+      "exists": true,
+      "wordCount": 2013,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-15T14:00:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2013 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-15T14:00:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-social-media-templates-branding",
+      "exists": true,
+      "wordCount": 2056,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": "2026-03-11",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2056 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-11"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-podcast-to-video-repurposing",
+      "exists": true,
+      "wordCount": 1944,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 8,
+      "modifiedDate": "2026-03-13",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 1944 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-13"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-video-thumbnail-ctr-2026",
+      "exists": true,
+      "wordCount": 2081,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 8,
+      "modifiedDate": "2026-03-15",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2081 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-15"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-video-analytics-audience-2026",
+      "exists": true,
+      "wordCount": 2010,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 8,
+      "modifiedDate": "2026-03-15",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2010 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-15"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-video-dubbing-localization-2026",
+      "exists": true,
+      "wordCount": 2067,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-15T10:00:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2067 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-15T10:00:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-video-testimonial-social-proof",
+      "exists": true,
+      "wordCount": 1994,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 8,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 1994 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-video-background-removal-2026",
+      "exists": true,
+      "wordCount": 2152,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-13T09:30:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2152 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-13T09:30:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-educational-video-course-creators",
+      "exists": true,
+      "wordCount": 2087,
+      "imageCount": 4,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 8,
+      "modifiedDate": "2026-03-15",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2087 (target 2500-3500)",
+        "Could use more images: 4 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-15"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-attribution-modeling-revenue-2026",
+      "exists": true,
+      "wordCount": 2299,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2299 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-customer-onboarding-saas-2026",
+      "exists": true,
+      "wordCount": 2452,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-14T09:00:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2452 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-14T09:00:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-content-gap-analysis-2026",
+      "exists": true,
+      "wordCount": 2688,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-technical-writing-documentation-2026",
+      "exists": true,
+      "wordCount": 2444,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-10",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2444 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-10"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-document-translation-business",
+      "exists": true,
+      "wordCount": 677,
+      "imageCount": 0,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 2,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Word count too low: 677 (min 1000)",
+        "Not enough images: 0 (min 4)",
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 677 (target 2500-3500)",
+        "Could use more images: 0 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 2 (target 3-5)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-contract-legal-writing-2026",
+      "exists": true,
+      "wordCount": 2065,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-14T11:00:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2065 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14T11:00:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-grant-writing-tools-2026",
+      "exists": true,
+      "wordCount": 2482,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2482 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-storytelling-brand-marketing",
+      "exists": true,
+      "wordCount": 1969,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-12T08:15:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 1969 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-12T08:15:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-no-code-workflow-automation-2026",
+      "exists": true,
+      "wordCount": 2240,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2240 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-tools-for-nonprofit-organizations",
+      "exists": true,
+      "wordCount": 2171,
+      "imageCount": 4,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 7,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2171 (target 2500-3500)",
+        "Could use more images: 4 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-car-dealership-auto-sales-2026",
+      "exists": true,
+      "wordCount": 1701,
+      "imageCount": 0,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 2,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Not enough images: 0 (min 4)",
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 1701 (target 2500-3500)",
+        "Could use more images: 0 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 2 (target 3-5)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-hotel-revenue-pricing-2026",
+      "exists": true,
+      "wordCount": 2386,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12T14:30:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2386 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12T14:30:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-insurance-underwriting-risk-2026",
+      "exists": true,
+      "wordCount": 1909,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-12T11:00:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 1909 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-12T11:00:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-robotics-warehouse-automation-2026",
+      "exists": true,
+      "wordCount": 1299,
+      "imageCount": 0,
+      "comparisonBoxes": 1,
+      "faqCount": 0,
+      "internalLinks": 2,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Not enough images: 0 (min 4)",
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 1299 (target 2500-3500)",
+        "Could use more images: 0 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 2 (target 3-5)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-marketing-automation-platforms-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-personalization-ecommerce-2026",
+      "exists": true,
+      "wordCount": 2531,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-14",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-14"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-influencer-marketing-matching-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-conversion-rate-optimization-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-landing-page-builders-2026",
+      "exists": true,
+      "wordCount": 2818,
+      "imageCount": 4,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-13",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-13"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-ab-testing-optimization-2026",
+      "exists": true,
+      "wordCount": 2426,
+      "imageCount": 6,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 0,
+      "modifiedDate": "2026-03-15",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2426 (target 2500-3500)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Low internal links: 0 (target 3-5)",
+        "Modified date not current: 2026-03-15"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-predictive-analytics-business-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-data-visualization-dashboards-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-sentiment-analysis-brand-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-chatbot-conversation-design-2026",
+      "exists": true,
+      "wordCount": 2155,
+      "imageCount": 5,
+      "comparisonBoxes": 0,
+      "faqCount": 0,
+      "internalLinks": 10,
+      "modifiedDate": "2026-03-08T16:45:00Z",
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2155 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
+        "No comparison boxes found",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: 2026-03-08T16:45:00Z"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-voice-assistant-development-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-recommendation-engine-ecommerce",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-dynamic-pricing-retail-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-inventory-management-retail-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-supply-chain-optimization-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-logistics-route-planning-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-fraud-detection-ecommerce-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-image-recognition-retail-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-visual-search-shopping-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-product-description-generator",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-review-management-reputation-2026",
+      "exists": true,
+      "wordCount": 2297,
+      "imageCount": 4,
+      "comparisonBoxes": 2,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Word count below ideal: 2297 (target 2500-3500)",
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-competitive-intelligence-2026",
+      "exists": true,
+      "wordCount": 2632,
+      "imageCount": 4,
+      "comparisonBoxes": 2,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-market-research-consumer-insights",
+      "exists": true,
+      "wordCount": 2747,
+      "imageCount": 4,
+      "comparisonBoxes": 2,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-brand-monitoring-sentiment-2026",
+      "exists": true,
+      "wordCount": 2646,
+      "imageCount": 4,
+      "comparisonBoxes": 2,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-crisis-communications-pr-2026",
+      "exists": true,
+      "wordCount": 2733,
+      "imageCount": 4,
+      "comparisonBoxes": 2,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup"
+      ],
+      "warnings": [
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-press-release-generation-2026",
+      "exists": true,
+      "wordCount": 2391,
+      "imageCount": 4,
+      "comparisonBoxes": 2,
+      "faqCount": 0,
+      "internalLinks": 6,
+      "modifiedDate": null,
+      "hasMetaDescription": true,
+      "hasSchema": false,
+      "issues": [
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
+      ],
+      "warnings": [
+        "Word count below ideal: 2391 (target 2500-3500)",
+        "Could use more images: 4 (ideal 6+)",
+        "Few FAQs: 0 (target 5-10)",
+        "Modified date not current: null"
+      ],
+      "status": "NEEDS_FIXES"
+    },
+    {
+      "slug": "ai-media-monitoring-news-tracking",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-influencer-discovery-outreach",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-affiliate-marketing-optimization",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-referral-program-automation-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-loyalty-program-personalization",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-upsell-cross-sell-ecommerce",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-churn-prediction-retention-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-customer-lifetime-value-clv",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-win-loss-analysis-sales-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-proposal-generation-rfp-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-contract-negotiation-legal-ai",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-compliance-monitoring-regtech",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-risk-assessment-enterprise-2026",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    },
+    {
+      "slug": "ai-business-intelligence-analytics",
+      "exists": false,
+      "issues": [
+        "Article file not found"
+      ]
+    }
+  ]
+}
