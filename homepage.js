@@ -16,8 +16,71 @@
     'Case Studies': '📋'
   };
 
+  // Unsplash category-based fallback images
+  var CATEGORY_IMAGES = {
+    'AI Tools': 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80',
+    'Comparisons': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    'Guides': 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80',
+    'How-To': 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
+    'Tutorials': 'https://images.unsplash.com/photo-1515879218367-8466d910auj7?w=600&q=80',
+    'Productivity': 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80',
+    'Analysis': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    'Content Marketing': 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80',
+    'Pricing': 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80',
+    'Case Studies': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80'
+  };
+  var DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80';
+
+  // === NORMALIZE DATA ===
+  // articles-data.js provides: slug, title, category, description, url
+  // We need: t (title), c (category), d (description), f (url/file), dt (date), i (image)
+  function normalizeArticles(raw) {
+    var result = [];
+    // Generate spread dates so articles appear distributed over 2025-2026
+    var baseDate = new Date('2025-03-01');
+    var totalDays = 365; // spread over a year
+    for (var idx = 0; idx < raw.length; idx++) {
+      var r = raw[idx];
+      // Compute a pseudo date spread evenly
+      var dayOffset = Math.floor((idx / raw.length) * totalDays);
+      var d = new Date(baseDate.getTime() + dayOffset * 86400000);
+      var dateStr = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      
+      // Pick image based on category with index variation
+      var imgPool = [
+        'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80',
+        'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80',
+        'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&q=80',
+        'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80',
+        'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+        'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+        'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80',
+        'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80',
+        'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&q=80',
+        'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80'
+      ];
+      var img = CATEGORY_IMAGES[r.category] || imgPool[idx % imgPool.length];
+
+      result.push({
+        t: r.title || '',
+        c: r.category || 'AI Tools',
+        d: r.description || '',
+        f: r.url || ('/articles/' + (r.slug || '') + '.html'),
+        dt: r.date || dateStr,
+        i: r.image || img,
+        slug: r.slug || ''
+      });
+    }
+    // Reverse so newest dates come first in the array
+    result.reverse();
+    return result;
+  }
+
   // === STATE ===
-  var allArticles = typeof ARTICLES_DATA !== 'undefined' ? ARTICLES_DATA : [];
+  var rawData = typeof ARTICLES_DATA !== 'undefined' ? ARTICLES_DATA : [];
+  var allArticles = normalizeArticles(rawData);
   var filtered = allArticles.slice();
   var currentPage = 1;
   var activeCategory = 'all';
@@ -107,7 +170,7 @@
     for (var i = 0; i < top5.length; i++) {
       var a = top5[i];
       html += '<a href="' + escapeHtml(a.f) + '" class="recent-post-item">' +
-        '<img src="' + escapeHtml(a.i) + '&w=120&q=70" alt="" class="recent-post-thumb" loading="lazy">' +
+        '<img src="' + escapeHtml(a.i) + '" alt="" class="recent-post-thumb" loading="lazy">' +
         '<div class="recent-post-info">' +
           '<h4>' + escapeHtml(truncate(a.t, 60)) + '</h4>' +
           '<span class="recent-post-date">' + formatDate(a.dt) + '</span>' +
@@ -151,9 +214,10 @@
   function renderCard(a, index) {
     var icon = CATEGORY_ICONS[a.c] || '📄';
     var delay = Math.min(index * 30, 300);
+    var imgSrc = a.i || DEFAULT_IMAGE;
     return '<div class="post-card card-animate" style="animation-delay:' + delay + 'ms">' +
       '<div class="post-card-img-wrap">' +
-        '<img src="' + escapeHtml(a.i.replace(/w=\d+/, 'w=600')) + '" alt="' + escapeHtml(a.t) + '" class="post-card-img" loading="lazy">' +
+        '<img src="' + escapeHtml(imgSrc) + '" alt="' + escapeHtml(a.t) + '" class="post-card-img" loading="lazy">' +
         '<span class="post-card-category">' + escapeHtml(a.c) + '</span>' +
       '</div>' +
       '<div class="post-card-body">' +
