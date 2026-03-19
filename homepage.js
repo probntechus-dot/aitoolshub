@@ -372,11 +372,21 @@
   });
 
   // === INIT ===
+  console.log('[HOMEPAGE.JS INIT]', 'Starting initialization...');
+  console.log('[HOMEPAGE.JS]', 'rawData length:', rawData.length);
+  console.log('[HOMEPAGE.JS]', 'allArticles length:', allArticles.length);
+  console.log('[HOMEPAGE.JS]', 'grid element:', grid);
+  
   buildCategoryPills();
   buildSidebarRecent();
   applyFilters();
 
+  console.log('[HOMEPAGE.JS]', 'After applyFilters - filtered length:', filtered.length);
+  console.log('[HOMEPAGE.JS]', 'Grid innerHTML length:', grid.innerHTML.length);
+
   // Update search placeholder with accurate count
   searchInput.placeholder = 'Search ' + allArticles.length + ' articles — type a topic, tool, or keyword...';
+  
+  console.log('[HOMEPAGE.JS]', 'Initialization complete!');
 
 })();
