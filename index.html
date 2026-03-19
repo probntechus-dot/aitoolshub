@@ -271,6 +271,12 @@
 
 <!-- Article Data + App Logic -->
 <script src="articles-data.js"></script>
+<script>
+  console.log('[INLINE]', 'After articles-data.js, ARTICLES_DATA defined?', typeof ARTICLES_DATA !== 'undefined');
+  if (typeof ARTICLES_DATA !== 'undefined') {
+    console.log('[INLINE]', 'ARTICLES_DATA length:', ARTICLES_DATA.length);
+  }
+</script>
 <script src="homepage-simple.js"></script>
 </body>
 </html>
