@@ -133,25 +133,43 @@
   // Initialize when page loads
   console.log('[HOMEPAGE]', 'Script loaded, checking for ARTICLES_DATA...');
   
-  // Wait for ARTICLES_DATA to be defined (it should be loaded by articles-data.js)
-  var checkCounter = 0;
-  var checkInterval = setInterval(function() {
-    if (typeof ARTICLES_DATA !== 'undefined' && ARTICLES_DATA.length > 0) {
-      clearInterval(checkInterval);
-      console.log('[HOMEPAGE]', 'ARTICLES_DATA found! Initializing...');
+  function tryInit() {
+    console.log('[HOMEPAGE]', 'tryInit called, ARTICLES_DATA defined?', typeof ARTICLES_DATA !== 'undefined');
+    
+    if (typeof ARTICLES_DATA !== 'undefined' && ARTICLES_DATA && ARTICLES_DATA.length > 0) {
+      console.log('[HOMEPAGE]', 'SUCCESS: ARTICLES_DATA found with', ARTICLES_DATA.length, 'articles!');
       initArticles();
-    } else {
-      checkCounter++;
-      if (checkCounter > 10) {
-        clearInterval(checkInterval);
-        console.error('[ERROR]', 'ARTICLES_DATA never loaded after 1 second!');
-      }
+      return true;
     }
-  }, 100);
-  
-  // Also try immediately in case it's already loaded
-  if (typeof ARTICLES_DATA !== 'undefined' && ARTICLES_DATA.length > 0) {
-    initArticles();
+    console.log('[HOMEPAGE]', 'ARTICLES_DATA not ready yet');
+    return false;
   }
+  
+  // Try immediately
+  if (!tryInit()) {
+    // Wait for ARTICLES_DATA to be defined (it should be loaded by articles-data.js)
+    var checkCounter = 0;
+    var checkInterval = setInterval(function() {
+      if (tryInit()) {
+        clearInterval(checkInterval);
+      } else {
+        checkCounter++;
+        if (checkCounter > 50) {
+          clearInterval(checkInterval);
+          console.error('[ERROR]', 'ARTICLES_DATA never loaded after 5 seconds!');
+          // Emergency: show error in grid
+          if (grid) {
+            grid.innerHTML = '<div style="color:red;padding:20px;">Error: Articles data failed to load. Check browser console.</div>';
+          }
+        }
+      }
+    }, 100);
+  }
+  
+  // Also add to window.onload as final fallback
+  window.addEventListener('load', function() {
+    console.log('[HOMEPAGE]', 'Window load event fired');
+    tryInit();
+  });
 
 })();
