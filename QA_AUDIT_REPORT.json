@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-19T23:48:59.818Z",
+  "timestamp": "2026-03-20T00:17:26.394Z",
   "summary": {
     "total": 100,
     "existing": 70,
@@ -9,8 +9,8 @@
     "needsFixes": 70
   },
   "metrics": {
-    "avgWordCount": 2268,
-    "avgImages": 4.8,
+    "avgWordCount": 2480,
+    "avgImages": 5.1,
     "avgFAQs": 0.1
   },
   "articles": [
@@ -58,7 +58,7 @@
     {
       "slug": "ai-side-hustles-that-actually-work",
       "exists": true,
-      "wordCount": 2023,
+      "wordCount": 2178,
       "imageCount": 2,
       "comparisonBoxes": 1,
       "faqCount": 0,
@@ -71,7 +71,7 @@
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 2023 (target 2500-3500)",
+        "Word count below ideal: 2178 (target 2500-3500)",
         "Could use more images: 2 (ideal 6+)",
         "Few FAQs: 0 (target 5-10)"
       ],
@@ -80,7 +80,7 @@
     {
       "slug": "small-business-ai-adoption-guide",
       "exists": true,
-      "wordCount": 2398,
+      "wordCount": 3095,
       "imageCount": 5,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -92,7 +92,6 @@
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 2398 (target 2500-3500)",
         "Could use more images: 5 (ideal 6+)",
         "No comparison boxes found",
         "Few FAQs: 0 (target 5-10)",
@@ -126,7 +125,7 @@
     {
       "slug": "chatgpt-for-excel-formulas-guide",
       "exists": true,
-      "wordCount": 2603,
+      "wordCount": 3393,
       "imageCount": 5,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -148,7 +147,7 @@
     {
       "slug": "how-to-use-ai-for-job-search",
       "exists": true,
-      "wordCount": 2289,
+      "wordCount": 2736,
       "imageCount": 5,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -160,7 +159,6 @@
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 2289 (target 2500-3500)",
         "Could use more images: 5 (ideal 6+)",
         "No comparison boxes found",
         "Few FAQs: 0 (target 5-10)",
@@ -171,7 +169,7 @@
     {
       "slug": "ai-content-detection-how-it-works",
       "exists": true,
-      "wordCount": 2583,
+      "wordCount": 3378,
       "imageCount": 5,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -216,7 +214,7 @@
     {
       "slug": "ai-writing-tools-2026",
       "exists": true,
-      "wordCount": 826,
+      "wordCount": 974,
       "imageCount": 3,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -225,12 +223,12 @@
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
-        "Word count too low: 826 (min 1000)",
+        "Word count too low: 974 (min 1000)",
         "Not enough images: 3 (min 4)",
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 826 (target 2500-3500)",
+        "Word count below ideal: 974 (target 2500-3500)",
         "Could use more images: 3 (ideal 6+)",
         "No comparison boxes found",
         "Few FAQs: 0 (target 5-10)",
@@ -241,7 +239,7 @@
     {
       "slug": "ai-video-editing-tools-free",
       "exists": true,
-      "wordCount": 2635,
+      "wordCount": 3106,
       "imageCount": 7,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -284,7 +282,7 @@
     {
       "slug": "ai-freelance-services-high-demand",
       "exists": true,
-      "wordCount": 2550,
+      "wordCount": 3186,
       "imageCount": 4,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -375,7 +373,7 @@
     {
       "slug": "ai-etsy-shop-business-guide",
       "exists": true,
-      "wordCount": 2575,
+      "wordCount": 3121,
       "imageCount": 5,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -397,7 +395,7 @@
     {
       "slug": "ai-tools-for-dropshipping-business",
       "exists": true,
-      "wordCount": 2800,
+      "wordCount": 2949,
       "imageCount": 10,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -419,24 +417,20 @@
     {
       "slug": "ai-business-plan-generator-2026",
       "exists": true,
-      "wordCount": 523,
-      "imageCount": 0,
-      "comparisonBoxes": 1,
+      "wordCount": 2772,
+      "imageCount": 5,
+      "comparisonBoxes": 2,
       "faqCount": 0,
-      "internalLinks": 2,
+      "internalLinks": 7,
       "modifiedDate": null,
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
-        "Word count too low: 523 (min 1000)",
-        "Not enough images: 0 (min 4)",
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 523 (target 2500-3500)",
-        "Could use more images: 0 (ideal 6+)",
+        "Could use more images: 5 (ideal 6+)",
         "Few FAQs: 0 (target 5-10)",
-        "Low internal links: 2 (target 3-5)",
         "Modified date not current: null"
       ],
       "status": "NEEDS_FIXES"
@@ -527,8 +521,8 @@
     {
       "slug": "ai-real-estate-photography-2026",
       "exists": true,
-      "wordCount": 1372,
-      "imageCount": 0,
+      "wordCount": 1402,
+      "imageCount": 5,
       "comparisonBoxes": 1,
       "faqCount": 0,
       "internalLinks": 2,
@@ -536,12 +530,11 @@
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
-        "Not enough images: 0 (min 4)",
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 1372 (target 2500-3500)",
-        "Could use more images: 0 (ideal 6+)",
+        "Word count below ideal: 1402 (target 2500-3500)",
+        "Could use more images: 5 (ideal 6+)",
         "Few FAQs: 0 (target 5-10)",
         "Low internal links: 2 (target 3-5)",
         "Modified date not current: null"
@@ -1155,24 +1148,21 @@
     {
       "slug": "ai-document-translation-business",
       "exists": true,
-      "wordCount": 677,
-      "imageCount": 0,
-      "comparisonBoxes": 1,
+      "wordCount": 2942,
+      "imageCount": 5,
+      "comparisonBoxes": 2,
       "faqCount": 0,
-      "internalLinks": 2,
+      "internalLinks": 5,
       "modifiedDate": null,
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
-        "Word count too low: 677 (min 1000)",
-        "Not enough images: 0 (min 4)",
-        "Missing Schema markup"
+        "Missing Schema markup",
+        "Placeholder text found: placeholder"
       ],
       "warnings": [
-        "Word count below ideal: 677 (target 2500-3500)",
-        "Could use more images: 0 (ideal 6+)",
+        "Could use more images: 5 (ideal 6+)",
         "Few FAQs: 0 (target 5-10)",
-        "Low internal links: 2 (target 3-5)",
         "Modified date not current: null"
       ],
       "status": "NEEDS_FIXES"
@@ -1274,7 +1264,7 @@
     {
       "slug": "ai-tools-for-nonprofit-organizations",
       "exists": true,
-      "wordCount": 2171,
+      "wordCount": 2922,
       "imageCount": 4,
       "comparisonBoxes": 0,
       "faqCount": 0,
@@ -1286,7 +1276,6 @@
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 2171 (target 2500-3500)",
         "Could use more images: 4 (ideal 6+)",
         "No comparison boxes found",
         "Few FAQs: 0 (target 5-10)",
@@ -1297,8 +1286,8 @@
     {
       "slug": "ai-car-dealership-auto-sales-2026",
       "exists": true,
-      "wordCount": 1701,
-      "imageCount": 0,
+      "wordCount": 1719,
+      "imageCount": 3,
       "comparisonBoxes": 0,
       "faqCount": 0,
       "internalLinks": 2,
@@ -1306,12 +1295,12 @@
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
-        "Not enough images: 0 (min 4)",
+        "Not enough images: 3 (min 4)",
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 1701 (target 2500-3500)",
-        "Could use more images: 0 (ideal 6+)",
+        "Word count below ideal: 1719 (target 2500-3500)",
+        "Could use more images: 3 (ideal 6+)",
         "No comparison boxes found",
         "Few FAQs: 0 (target 5-10)",
         "Low internal links: 2 (target 3-5)",
@@ -1370,8 +1359,8 @@
     {
       "slug": "ai-robotics-warehouse-automation-2026",
       "exists": true,
-      "wordCount": 1299,
-      "imageCount": 0,
+      "wordCount": 1323,
+      "imageCount": 4,
       "comparisonBoxes": 1,
       "faqCount": 0,
       "internalLinks": 2,
@@ -1379,12 +1368,11 @@
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
-        "Not enough images: 0 (min 4)",
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 1299 (target 2500-3500)",
-        "Could use more images: 0 (ideal 6+)",
+        "Word count below ideal: 1323 (target 2500-3500)",
+        "Could use more images: 4 (ideal 6+)",
         "Few FAQs: 0 (target 5-10)",
         "Low internal links: 2 (target 3-5)",
         "Modified date not current: null"
@@ -1598,34 +1586,32 @@
     {
       "slug": "ai-review-management-reputation-2026",
       "exists": true,
-      "wordCount": 2297,
+      "wordCount": 3139,
       "imageCount": 4,
       "comparisonBoxes": 2,
       "faqCount": 0,
       "internalLinks": 6,
-      "modifiedDate": null,
+      "modifiedDate": "2026-03-20",
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
         "Missing Schema markup"
       ],
       "warnings": [
-        "Word count below ideal: 2297 (target 2500-3500)",
         "Could use more images: 4 (ideal 6+)",
-        "Few FAQs: 0 (target 5-10)",
-        "Modified date not current: null"
+        "Few FAQs: 0 (target 5-10)"
       ],
       "status": "NEEDS_FIXES"
     },
     {
       "slug": "ai-competitive-intelligence-2026",
       "exists": true,
-      "wordCount": 2632,
+      "wordCount": 3517,
       "imageCount": 4,
       "comparisonBoxes": 2,
       "faqCount": 0,
       "internalLinks": 6,
-      "modifiedDate": null,
+      "modifiedDate": "2026-03-20",
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
@@ -1633,20 +1619,19 @@
       ],
       "warnings": [
         "Could use more images: 4 (ideal 6+)",
-        "Few FAQs: 0 (target 5-10)",
-        "Modified date not current: null"
+        "Few FAQs: 0 (target 5-10)"
       ],
       "status": "NEEDS_FIXES"
     },
     {
       "slug": "ai-market-research-consumer-insights",
       "exists": true,
-      "wordCount": 2747,
+      "wordCount": 3715,
       "imageCount": 4,
       "comparisonBoxes": 2,
       "faqCount": 0,
       "internalLinks": 6,
-      "modifiedDate": null,
+      "modifiedDate": "2026-03-20",
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
@@ -1654,20 +1639,19 @@
       ],
       "warnings": [
         "Could use more images: 4 (ideal 6+)",
-        "Few FAQs: 0 (target 5-10)",
-        "Modified date not current: null"
+        "Few FAQs: 0 (target 5-10)"
       ],
       "status": "NEEDS_FIXES"
     },
     {
       "slug": "ai-brand-monitoring-sentiment-2026",
       "exists": true,
-      "wordCount": 2646,
+      "wordCount": 3369,
       "imageCount": 4,
       "comparisonBoxes": 2,
       "faqCount": 0,
       "internalLinks": 6,
-      "modifiedDate": null,
+      "modifiedDate": "2026-03-20",
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
@@ -1675,20 +1659,19 @@
       ],
       "warnings": [
         "Could use more images: 4 (ideal 6+)",
-        "Few FAQs: 0 (target 5-10)",
-        "Modified date not current: null"
+        "Few FAQs: 0 (target 5-10)"
       ],
       "status": "NEEDS_FIXES"
     },
     {
       "slug": "ai-crisis-communications-pr-2026",
       "exists": true,
-      "wordCount": 2733,
+      "wordCount": 3216,
       "imageCount": 4,
       "comparisonBoxes": 2,
       "faqCount": 0,
       "internalLinks": 6,
-      "modifiedDate": null,
+      "modifiedDate": "2026-03-20",
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
@@ -1696,20 +1679,19 @@
       ],
       "warnings": [
         "Could use more images: 4 (ideal 6+)",
-        "Few FAQs: 0 (target 5-10)",
-        "Modified date not current: null"
+        "Few FAQs: 0 (target 5-10)"
       ],
       "status": "NEEDS_FIXES"
     },
     {
       "slug": "ai-press-release-generation-2026",
       "exists": true,
-      "wordCount": 2391,
+      "wordCount": 3165,
       "imageCount": 4,
       "comparisonBoxes": 2,
       "faqCount": 0,
       "internalLinks": 6,
-      "modifiedDate": null,
+      "modifiedDate": "2026-03-20",
       "hasMetaDescription": true,
       "hasSchema": false,
       "issues": [
@@ -1717,10 +1699,8 @@
         "Placeholder text found: placeholder"
       ],
       "warnings": [
-        "Word count below ideal: 2391 (target 2500-3500)",
         "Could use more images: 4 (ideal 6+)",
-        "Few FAQs: 0 (target 5-10)",
-        "Modified date not current: null"
+        "Few FAQs: 0 (target 5-10)"
       ],
       "status": "NEEDS_FIXES"
     },
