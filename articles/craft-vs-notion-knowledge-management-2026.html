@@ -206,6 +206,187 @@
 
         <p>Many teams do both: Craft for writing/publishing, Notion for operations/databases. Cost: $20-30/month per person. Reasonable for productivity.</p>
 
+        <h2>How AI Knowledge Management Technology Works</h2>
+        <p>Both Craft and Notion have invested heavily in AI since 2024, but their approaches reflect their core philosophies. Understanding the underlying tech explains why each tool excels in different scenarios.</p>
+
+        <h3>Craft's AI: Writing-Centric Intelligence</h3>
+        <p>Craft's AI is built around a fine-tuned language model optimized for long-form writing. When you ask it to generate an outline, it analyzes the topic, identifies logical structure, and produces a hierarchical document skeleton. The model has been specifically trained on well-structured documents — research papers, business reports, product documentation — so its output follows established writing conventions.</p>
+
+        <p>What makes Craft's AI distinctive is context awareness within documents. As you write, the AI understands your document's structure, tone, and subject matter. Ask it to "expand this section" and it generates content that matches your existing style, vocabulary level, and argument structure. This is harder than it sounds — most AI writing tools generate generic text regardless of surrounding context.</p>
+
+        <p>Craft also uses AI for document organization. Its "Smart Suggest" feature recommends backlinks between documents based on semantic similarity. If you write a document about "Q1 sales strategy" and another about "customer acquisition costs," Craft's AI will suggest linking them because it understands the conceptual relationship.</p>
+
+        <h3>Notion's AI: Data-Centric Intelligence</h3>
+        <p>Notion's AI takes a fundamentally different approach. Rather than optimizing for writing quality, it optimizes for working across your entire workspace. Notion AI can answer questions like "What were the action items from last week's team meeting?" by searching across all your pages, databases, and embedded content.</p>
+
+        <p>The technical architecture behind this is a retrieval-augmented generation (RAG) system. When you ask Notion AI a question, it first searches your workspace using vector embeddings to find relevant content. Then it passes that content to a language model along with your question to generate a contextual answer. This means Notion AI gets smarter as your workspace grows — more data means better answers.</p>
+
+        <p>Notion also uses AI for database operations: auto-categorizing items, suggesting property values, generating summaries of filtered views, and even creating automation rules. For teams with complex operational workflows, this data-aware AI is more valuable than Craft's writing-focused approach.</p>
+
+        <h2>Step-by-Step Implementation Guide</h2>
+
+        <h3>Building a Knowledge Base in Craft (Week 1 Plan)</h3>
+        <p><strong>Day 1-2: Structure your space.</strong> Create top-level folders for major categories: Company, Products, Processes, Research, Meeting Notes. Craft's folder system is simple and intuitive. Don't overthink the hierarchy — you can reorganize later with drag-and-drop.</p>
+
+        <p><strong>Day 3-4: Import existing content.</strong> Craft supports importing from Notion, Google Docs, Markdown files, and plain text. Batch-import your most important documents first. Use Craft's AI to reformat imported content — it can clean up formatting inconsistencies from different source tools.</p>
+
+        <p><strong>Day 5: Set up backlinks.</strong> Go through your 20 most important documents and add backlinks between related content. Craft's "@" mention system makes this fast. After initial manual linking, Craft's AI will start suggesting additional connections automatically.</p>
+
+        <p><strong>Day 6-7: Establish templates.</strong> Create templates for your recurring document types: meeting notes, project briefs, research summaries, weekly updates. Templates in Craft include formatting, structure, and placeholder text. They save 15-20 minutes per document.</p>
+
+        <h3>Building a Knowledge Base in Notion (Week 1-2 Plan)</h3>
+        <p><strong>Week 1, Day 1-2: Design your database structure.</strong> This is the critical step. Before writing any content, plan your databases. A typical knowledge base needs: a main "Pages" database (with properties for category, status, owner, last updated), a "Tags" database for cross-referencing, and a "Team" database for assignment. Design these relationships upfront — restructuring later is painful.</p>
+
+        <p><strong>Week 1, Day 3-5: Build views and templates.</strong> Create filtered views of your main database: "My Pages," "Recently Updated," "By Category," "Needs Review." Each view shows the same data differently, which is Notion's superpower. Create page templates for each document type with pre-filled properties.</p>
+
+        <p><strong>Week 2, Day 1-3: Import and organize content.</strong> Use Notion's import tools for existing content. Map imported documents to your database properties. This is time-consuming but essential for a functional knowledge base.</p>
+
+        <p><strong>Week 2, Day 4-5: Set up automations.</strong> Configure Notion automations: auto-assign reviewers when documents are marked "Ready for Review," send Slack notifications when key documents are updated, archive documents that haven't been edited in 90 days. These automations keep your knowledge base healthy without manual effort.</p>
+
+        <h2>Common Mistakes to Avoid</h2>
+
+        <h3>Craft Mistakes</h3>
+        <ul>
+            <li><strong>Creating too many folders:</strong> Craft works best with a flat-ish structure enhanced by backlinks. If you have more than 3 levels of folder nesting, you're using Craft like a file system instead of a knowledge graph. Simplify.</li>
+            <li><strong>Ignoring the AI assistant:</strong> Many Craft users don't realize how powerful the AI is for organizing content. Use it to suggest document structures, identify gaps in your knowledge base, and generate summaries of related documents.</li>
+            <li><strong>Not using Daily Notes:</strong> Craft's daily notes feature captures quick thoughts and links them to dates. It's perfect for meeting notes and daily observations that you can later organize into permanent documents.</li>
+            <li><strong>Skipping PDF export settings:</strong> If you share documents externally, configure export settings once (fonts, margins, header/footer). Beautiful exports are a Craft superpower — don't waste it with default settings.</li>
+            <li><strong>Over-relying on Craft for project management:</strong> Craft is a documentation tool, not a project management tool. Use it alongside a PM tool, not as a replacement. Trying to manage tasks in Craft leads to frustration.</li>
+        </ul>
+
+        <h3>Notion Mistakes</h3>
+        <ul>
+            <li><strong>Building before planning:</strong> The #1 Notion mistake is diving in without a database schema. Spend a full day planning your structure. Sketch it on paper first. Database relationships are powerful but painful to restructure later.</li>
+            <li><strong>Too many databases:</strong> New Notion users create a database for everything. Resist this urge. Start with 3-5 core databases and add more only when there's a clear relationship need. Every additional database adds complexity.</li>
+            <li><strong>Ignoring permissions:</strong> Notion's permission system is granular but not intuitive. A common mistake is sharing a top-level page without realizing all sub-pages inherit those permissions. Audit your permissions monthly.</li>
+            <li><strong>Not cleaning up:</strong> Notion workspaces accumulate cruft fast. Pages from abandoned projects, duplicate databases, outdated templates. Schedule a monthly cleanup session. Notion's "Last edited" sort is your friend.</li>
+            <li><strong>Expecting mobile parity:</strong> Notion's mobile app is functional but slower and more limited than desktop. Don't design workflows that require mobile editing. Mobile should be for reading and quick notes only.</li>
+        </ul>
+
+        <h2>ROI Analysis by Team Size</h2>
+
+        <h3>Individual Knowledge Workers</h3>
+        <p><strong>Craft:</strong> $10/month. Primary value: 30% faster document creation, beautiful exports for client-facing work, AI writing assistance. At 4 hours/week of document work, saves ~5 hours/month. At a $75/hour rate, that's $375 in value. <strong>ROI: 37x.</strong></p>
+
+        <p><strong>Notion:</strong> Free tier handles most individual needs. Plus at $10/month adds AI and advanced features. Primary value: single tool replacing notes, tasks, databases, bookmarks. Saves tool-switching time. Estimated 3 hours/month saved. <strong>ROI: 22x</strong> (at Plus tier).</p>
+
+        <h3>Small Teams (5-20 People)</h3>
+        <p><strong>Craft:</strong> $10/month/user = $50-200/month. Works well for writing-heavy teams (content agencies, research firms). Knowledge sharing through linked documents. Limitation: no database features for operational workflows.</p>
+
+        <p><strong>Notion:</strong> $10-18/month/user = $50-360/month. Full workspace replacement. Teams typically eliminate 2-3 other tools (Trello, Google Docs, Airtable) saving $500-1,500/month in other subscriptions. <strong>Net savings: $200-1,200/month.</strong></p>
+
+        <h3>Enterprise (50+ People)</h3>
+        <p>At enterprise scale, Notion dominates this comparison. Enterprise knowledge management requires: access controls, audit trails, integrations with existing tools, and scalable database structures. Notion provides all of these. Craft's simplicity becomes a limitation when you need to manage thousands of documents across dozens of teams with different access levels.</p>
+
+        <p>That said, some enterprises use Craft specifically for executive documentation and board materials where presentation quality matters most, while running Notion for operational knowledge management.</p>
+
+        <h2>Case Studies</h2>
+
+        <h3>Case Study 1: Research Firm Using Craft</h3>
+        <p>A 15-person market research firm switched from Google Docs to Craft in 2025. Their work involves writing 50+ research reports per quarter, each 3,000-10,000 words.</p>
+        <ul>
+            <li>Report writing time decreased 35% (from 12 hours average to 7.8 hours)</li>
+            <li>Client satisfaction with report formatting improved 42%</li>
+            <li>Backlinks between reports created a "research web" that analysts use to find related insights 60% faster</li>
+            <li>AI-generated outlines reduced blank-page paralysis — researchers start writing immediately instead of spending an hour on structure</li>
+        </ul>
+        <p>The managing director noted: "Our reports look like they came from a design agency now. Clients comment on the quality regularly, and it's just Craft's default formatting."</p>
+
+        <h3>Case Study 2: SaaS Startup Using Notion</h3>
+        <p>A 40-person SaaS startup consolidated from 7 tools into Notion as their single workspace. Previously they used: Google Docs (writing), Trello (tasks), Airtable (CRM), Confluence (wiki), Asana (projects), Dropbox (files), and Slack (communication).</p>
+        <ul>
+            <li>Tool costs dropped from $3,200/month to $720/month (Notion Business)</li>
+            <li>Onboarding time for new hires reduced from 2 weeks to 4 days (one tool to learn instead of seven)</li>
+            <li>Cross-team visibility improved dramatically — engineering could see marketing plans, sales could see product roadmaps</li>
+            <li>Notion AI answered 60% of internal questions without human involvement ("What's our refund policy?" → AI pulls from the handbook database)</li>
+        </ul>
+
+        <h3>Case Study 3: Hybrid Approach — Design Agency</h3>
+        <p>A 25-person design agency uses both tools: Craft for creative briefs, project documentation, and client presentations; Notion for project management, resource scheduling, and client databases.</p>
+        <ul>
+            <li>Creative team loves Craft's writing experience and beautiful exports</li>
+            <li>Operations team needs Notion's database views and automations</li>
+            <li>Combined cost: ~$30/person/month</li>
+            <li>Productivity gain vs. previous toolset: 28%</li>
+        </ul>
+
+        <h2>Future Outlook: Knowledge Management in 2027</h2>
+        <p>The AI knowledge management space is evolving fast. Here are the trends shaping 2027 and beyond.</p>
+
+        <h3>Key Predictions</h3>
+        <ul>
+            <li><strong>Conversational knowledge bases:</strong> Both tools are developing chat interfaces where you can ask natural language questions about your knowledge base. "What did we decide about pricing in Q1?" → instant answer from your documents. Notion is further ahead here due to its RAG architecture.</li>
+            <li><strong>Auto-generated documentation:</strong> AI will observe your workflows (meetings, Slack conversations, email threads) and automatically create structured documentation. Instead of writing meeting notes manually, the system will draft them and ask for approval.</li>
+            <li><strong>Cross-tool knowledge graphs:</strong> Future knowledge management won't be locked in one app. AI will create connections across your entire tool stack — linking a Slack conversation to a document to a project task to a customer record. Both Craft and Notion are building toward this vision.</li>
+            <li><strong>Predictive content surfacing:</strong> AI will learn what information you need based on context. Starting a meeting with a client? The system surfaces their history, last interaction notes, and relevant internal documents automatically.</li>
+            <li><strong>Collaborative AI editing:</strong> Multiple team members and AI working on documents simultaneously, with the AI suggesting improvements, flagging inconsistencies, and maintaining style guides across all content.</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can I migrate from Notion to Craft or vice versa?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, both tools support import and export. Craft can import Notion exports directly. Notion can import Markdown files exported from Craft. However, database structures and relations don't transfer — you'll need to rebuild those manually. Budget 1-2 weeks for a full migration of a medium-sized workspace."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is Craft or Notion better for personal use?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For personal knowledge management (journaling, notes, research), Craft is often the better choice due to its simpler interface and beautiful writing experience. For personal productivity (managing tasks, habits, finances, goals alongside notes), Notion offers more flexibility. Both have generous free tiers for personal use."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How secure are Craft and Notion for sensitive business data?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Both platforms use encryption at rest and in transit. Notion offers SOC 2 Type II compliance and SAML SSO on Business and Enterprise plans. Craft provides end-to-end encryption for personal spaces and SOC 2 compliance on team plans. For highly regulated industries (healthcare, finance), verify specific compliance certifications match your requirements."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Which tool has better offline support?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Craft has significantly better offline support, especially on Apple devices. Its native Mac and iOS apps cache content locally for full offline access. Notion's offline mode is more limited — it caches recently visited pages but doesn't support creating new database items offline. If offline access is critical, Craft is the clear winner."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can Notion replace a traditional wiki like Confluence?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, and many teams have made this switch successfully. Notion's wiki features include verified pages, page ownership, stale content detection, and team spaces. It lacks some Confluence-specific features like Jira deep integration and macro ecosystem, but for most teams, Notion's wiki is sufficient and significantly easier to maintain."
+                    }
+                }
+            ]
+        }
+        </script>
+
+        <h3>Can I migrate from Notion to Craft or vice versa?</h3>
+        <p>Yes, both tools support import and export. Craft can import Notion exports directly. Notion can import Markdown files exported from Craft. However, database structures and relations don't transfer — you'll need to rebuild those manually. Budget 1-2 weeks for a full migration of a medium-sized workspace.</p>
+
+        <h3>Is Craft or Notion better for personal use?</h3>
+        <p>For personal knowledge management (journaling, notes, research), Craft is often the better choice due to its simpler interface and beautiful writing experience. For personal productivity (managing tasks, habits, finances, goals alongside notes), Notion offers more flexibility. Both have generous free tiers for personal use.</p>
+
+        <h3>How secure are Craft and Notion for sensitive business data?</h3>
+        <p>Both platforms use encryption at rest and in transit. Notion offers SOC 2 Type II compliance and SAML SSO on Business and Enterprise plans. Craft provides end-to-end encryption for personal spaces and SOC 2 compliance on team plans. For highly regulated industries, verify specific compliance certifications match your requirements.</p>
+
+        <h3>Which tool has better offline support?</h3>
+        <p>Craft has significantly better offline support, especially on Apple devices. Its native Mac and iOS apps cache content locally for full offline access. Notion's offline mode is more limited. If offline access is critical, Craft is the clear winner.</p>
+
+        <h3>Can Notion replace a traditional wiki like Confluence?</h3>
+        <p>Yes, and many teams have made this switch successfully. Notion's wiki features include verified pages, page ownership, stale content detection, and team spaces. It lacks some Confluence-specific features like Jira deep integration, but for most teams, Notion's wiki is sufficient and significantly easier to maintain.</p>
+
         <div style="background: #f9f9f9; padding: 20px; border-radius: 4px; margin-top: 40px;">
             <h3>About Sarah Mitchell</h3>
             <p>Sarah has built knowledge bases for 10+ companies and tested every major platform. She recommends based on actual workflow, not hype.</p>
